@@ -301,24 +301,27 @@
     justify-content: center;
 }
 
- .historia_tierra_articulo_uno {
+.historia_tierra_articulos .historia_tierra_articulo_uno {
     background: #46A3FB;
-    width: 30%;
-    height: 30%;
     text-align: center;
     color:#fff;
-    border: 10px solid #46A3FB;
-    border-radius: 15px;
-    margin:10px;
+    border: 0.62rem solid #46A3FB;
+    border-radius: 0.31rem;
+    width: 12.5rem;
+    height: 15.75rem;
+    margin: 1.87rem;
+    padding: 0.62rem;
  }
 
  .historia_tierra_articulo_uno p {
-    margin: 10px;
+    margin: 0.62rem;
     font-size: 0.9rem;
  }
 
  .historia_tierra_articulo_uno img {
-    border-radius: 15px;
+    width: 100%;
+    height: 60%;
+    border-radius: 0.31rem;
  }
 
  .historia_tierra_articulo_uno_numero_uno {
