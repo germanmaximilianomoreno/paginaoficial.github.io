@@ -291,6 +291,49 @@
     text-align: center;
     color: var(--bg-color);
  }
+
+ .historia_tierra_articulos {
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ .historia_tierra_articulo_uno {
+    background: #46A3FB;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    color:#fff;
+    border: 10px solid #46A3FB;
+    border-radius: 15px;
+    margin:10px;
+ }
+
+ .historia_tierra_articulo_uno p {
+    margin: 10px;
+    font-size: 0.9rem;
+ }
+
+ .historia_tierra_articulo_uno img {
+    border-radius: 15px;
+ }
+
+ .historia_tierra_articulo_uno_numero_uno {
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color:#46A3FB;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+ }
+
  
   /* Formulario */
 
