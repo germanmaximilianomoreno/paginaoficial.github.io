@@ -642,6 +642,10 @@
         .theme-switch-wrapper {
             left: 50%;
         }
+
+        nav .alinear_menu {
+            justify-content: left;
+        }
      }
 
  @media screen and (max-width:900px) {

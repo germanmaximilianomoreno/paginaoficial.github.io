@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
   
   * {
      margin:0;
@@ -196,7 +196,7 @@
     height: 31.25rem;
     position: relative;
     margin-top: 4rem;
-    background-image: url(../imagenes/ciclon1.jpg);
+    background-image: url(../imagenes/ofifondo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(38, 172, 255, 0.6);
+    background: rgba(38, 172, 255, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -241,6 +241,12 @@
     font-size: 1.25rem;
     font-weight: 500;
     color: var(--bg-color);
+ }
+
+ #particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
  }
 
   /* Artículos*/
@@ -610,6 +616,7 @@
             padding: 1.31rem 80rem 1.31rem 1rem;
             width: 100%;
             align-items: flex-start;
+            color: #46A3FB;
         }
 
         .menu_bar {
@@ -705,3 +712,10 @@
              font-size: 10px;
         }
      }
+
+
+
+      
+   
+ 
+                
