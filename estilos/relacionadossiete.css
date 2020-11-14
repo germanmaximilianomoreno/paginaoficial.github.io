@@ -306,10 +306,14 @@
     background:#46A3FB;
     width: 15.5rem;
     max-width: 14rem;
-    height: 17.5rem;
+    height: 20.5rem;
     margin: 1rem;
     border-radius: 1.6rem;
+    display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
  }
 
  .redondo {
@@ -343,15 +347,10 @@
 
 }
 
-.contenedor_secundario_historia_tierra p {
-   margin:0;
-   font-size: 1.1rem;
-   color:white;
-   display: flex;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
-   padding-left: 30px;
+.contenedor_secundario_historia_tierra h3 {
+   font-size: 1.12rem;
+    margin-top: 1rem;
+    color:white;
    
 }
 
@@ -359,7 +358,6 @@
    width: 100%;
    max-width: 12rem;
    border-radius: 1rem;
-   margin-top: 0;
    padding: 5px;
  }
  
