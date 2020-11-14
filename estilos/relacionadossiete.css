@@ -293,13 +293,16 @@
  }
 
  .todos {
+   width: 100%;
+   max-width: 140rem;
+   margin: auto;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
 
  }
 
- .contenedor_historia_tierra {
+ .todos .contenedor_historia_tierra {
     background:#46A3FB;
     width: 100%;
     max-width: 14rem;
