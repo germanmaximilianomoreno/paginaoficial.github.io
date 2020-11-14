@@ -372,7 +372,7 @@
  .contenedor_texto_imagen_dinosaurio {
     margin: 0;
     width: 15rem;
-    height: 39rem;
+    height: 50%;
     display: inline-block;
     background: #46A3FB;
     border-radius: 0.5rem;
@@ -384,7 +384,7 @@
  .contenedor_texto_imagen_dinosaurio_1 {
    margin: 0;
    width: 15rem;
-   height: 37rem;
+   height: 50%;
    display: inline-block;
    background: #46A3FB;
    border-radius: 0.5rem;
