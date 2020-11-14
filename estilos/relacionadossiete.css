@@ -304,8 +304,7 @@
 
  .todos .contenedor_historia_tierra {
     background:#46A3FB;
-    width: 15.5rem;
-    max-width: 14rem;
+    width: 14rem;
     height: 20.5rem;
     margin: 1rem;
     border-radius: 1.6rem;
@@ -339,7 +338,7 @@
    background: #46A3FB;
    width: 100%;
    max-width: 12rem;
-   height: 6rem;
+   height: 4rem;
    display: flex;
    text-align: center;
    justify-content: center;
@@ -349,14 +348,14 @@
 
 .contenedor_secundario_historia_tierra h3 {
    font-size: 1.12rem;
-    margin-top: 1rem;
+    
     color:white;
    
 }
 
 .contenedor_historia_tierra img {
    width: 100%;
-   max-width: 12rem;
+   max-width: 13rem;
    border-radius: 1rem;
    padding: 5px;
  }
