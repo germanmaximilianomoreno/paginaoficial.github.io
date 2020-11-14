@@ -309,6 +309,7 @@
     height: 18.5rem;
     margin: 1rem;
     border-radius: 1.6rem;
+    text-align: center;
  }
 
  .redondo {
@@ -357,10 +358,8 @@
 .contenedor_historia_tierra img {
    width: 100%;
    max-width: 12rem;
-   height: 8rem;
    border-radius: 1rem;
-   margin: 1rem;
-   display: flex;
+   margin-top: 0;
 }
  
   /* Formulario */
