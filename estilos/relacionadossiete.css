@@ -272,7 +272,7 @@
  .articles::before {
     content: '';
     width: 100%;
-    height: 6px;
+    height: 0.37rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -284,7 +284,7 @@
     background: #46A3FB;
     width: 100%;
     height: 30%;
-    padding: 2px;
+    padding: 0.12rem;
  }
 
  .texto_imagen_dinosaurio p {
@@ -312,7 +312,7 @@
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
+    padding: 0.62rem;
  }
 
  .redondo {
@@ -334,7 +334,7 @@
    align-items: center;
    margin:auto;
    color:#46A3FB;
-   margin-top:7px;
+   margin-top: 0.44rem;
 }
 
 .contenedor_secundario_historia_tierra {
@@ -357,7 +357,7 @@
    width: 100%;
    max-width: 13rem;
    border-radius: 1rem;
-   padding: 5px;
+   padding: 0.31rem;
  }
 
  .contenedor_texto_dinosaurio {
@@ -376,8 +376,8 @@
     display: inline-block;
     background: #46A3FB;
     border-radius: 0.5rem;
-    padding: 10px;
-    margin:1rem;
+    padding: 0.62rem;
+    margin: 1rem;
     text-align: center;
  }
 
