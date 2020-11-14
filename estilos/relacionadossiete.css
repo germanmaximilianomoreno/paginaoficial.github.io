@@ -436,6 +436,7 @@
     background: #46A3FB;
     padding: 1rem;
     color: var(--bg-color);
+    border-radius: 1rem;
  }
 
  .contenedor_eras h3 {
