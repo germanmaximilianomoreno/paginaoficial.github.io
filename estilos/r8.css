@@ -458,6 +458,15 @@
  .imagen_dinoballe {
    height: 7.5rem;
  }
+
+ .castaño_ilustrado {
+    display: flex;
+    margin: auto;
+ }
+
+ .texto_imagen_borde {
+    border: 1px solid #46A3FB;
+ }
  
  
   /* Formulario */
