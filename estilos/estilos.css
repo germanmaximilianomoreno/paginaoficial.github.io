@@ -12,7 +12,7 @@
  :root {
    --primary-color: #000000;
    --bg-color: #ffffff;
-   --sombra: 0.62rem 0.62rem 0rem 0rem #46A3FB, 1.25rem 1.25rem #83C1FB, 1.87rem 1.87rem 0.87rem #ACD5FD;
+   --sombra: 0.62rem 0.62rem 0rem 0rem #369e61, 1.25rem 1.25rem #6fc290, 1.87rem 1.87rem 0.87rem #8cebb3;
  }
 
  [data-theme="dark"] {
@@ -33,7 +33,7 @@
  }
 
  body::-webkit-scrollbar-thumb {
-     background: #46A3FB;
+     background: #369e61;
  }
 
   /* Menu de navegación*/
@@ -52,7 +52,7 @@
 
  .contenedor::before {
     content: '';
-    background: #46A3FB;
+    background: #369e61;
     width: 100%;
     height: 4px;
     top: 0;
@@ -95,7 +95,7 @@
  header nav ul li a {
     padding: 1.5rem 2rem;
     display: flex;
-    color:#46A3FB;
+    color: #369e61;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
@@ -136,7 +136,7 @@
  }
 
  .slider {
-    background-color: #46A3FB;
+    background-color: #369e61;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -174,7 +174,7 @@
  }
 
  input:checked + .slider {
-    background-color: #46A3FB;
+    background-color: #369e61;
  }
 
  input:checked + .slider::before {
@@ -196,7 +196,7 @@
     height: 31.25rem;
     position: relative;
     margin-top: 4rem;
-    background-image: url(../imagenes/nuestromundo2.jpg);
+    background-image: url(../imagenes/portadaplanta2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background:#46A3FB; 
+    background:#369e61; 
     border-radius: 1rem;
  }
 
@@ -309,7 +309,7 @@
    position: absolute;
    top: 0;
    left: 0;
-   background:#46A3FB; 
+   background:#369e61; 
    border-radius: 1rem;
  }
 
@@ -325,7 +325,7 @@
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 2px solid #46A3FB;
+    border: 2px solid #369e61;
     font-family: 'calibri';
     font-size: 18px;
     outline-color: #074ee7;
@@ -341,7 +341,7 @@
  }
  
  .formulario p a {
-    color: #46A3FB;
+    color: #369e61;
     text-decoration: none;
     font-weight: 800;
  }
@@ -352,7 +352,7 @@
 
  .formulario .boton_registrar {
     width: 100%;
-    background:  #46A3FB;
+    background:  #369e61;
     border: none;
     padding: 12px;
     color: rgb(223, 223, 223);
@@ -483,7 +483,7 @@
  #button-up {
     width: 3.75rem;
     height:  3.75rem;
-    background: #46A3FB;
+    background: #369e61;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,7 +526,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background:#46A3FB; 
+    background:#369e61; 
  }
 
  .container_footer footer {
@@ -547,7 +547,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    color: #46A3FB;
+    color: #369e61;
     text-align: center;
  }
 
@@ -610,14 +610,14 @@
         header nav ul li {
             display: block;
             float:none;
-            border-bottom: 0.1rem solid #46A3FB;
+            border-bottom: 0.1rem solid #369e61;
         }
 
         header nav ul li a {
             padding: 1.31rem 80rem 1.31rem 1rem;
             width: 100%;
             align-items: flex-start;
-            color: #46A3FB;
+            color: #369e61;
         }
 
         .menu_bar {
@@ -629,7 +629,7 @@
             display: block;
             padding: 1.25rem;
             height: 4.19rem;
-            color: #46A3FB;
+            color: #369e61;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.56rem;
