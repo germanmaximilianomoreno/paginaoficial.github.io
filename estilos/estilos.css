@@ -10,14 +10,15 @@
   /*Variable para modo oscuro*/
 
  :root {
-   --primary-color: #000000;
-   --bg-color: #ffffff;
+   --principal: #369e61;
+   --primary-color: #cccccc;
+   --bg-color: #272626;
    --sombra: 0.62rem 0.62rem 0rem 0rem #369e61, 1.25rem 1.25rem #6fc290, 1.87rem 1.87rem 0.87rem #8cebb3;
  }
 
  [data-theme="dark"] {
-   --primary-color: #cccccc;
-   --bg-color: #272626;
+   --primary-color: #000000;
+   --bg-color: #ffffff;
  }
 
  body {
@@ -33,7 +34,7 @@
  }
 
  body::-webkit-scrollbar-thumb {
-     background: #369e61;
+     background: var(--principal);
  }
 
   /* Menu de navegación*/
@@ -52,7 +53,7 @@
 
  .contenedor::before {
     content: '';
-    background: #369e61;
+    background: var(--principal);
     width: 100%;
     height: 4px;
     top: 0;
@@ -95,7 +96,7 @@
  header nav ul li a {
     padding: 1.5rem 2rem;
     display: flex;
-    color: #369e61;
+    color: var(--principal);
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
@@ -136,7 +137,7 @@
  }
 
  .slider {
-    background-color: #369e61;
+    background-color: var(--principal);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -174,7 +175,7 @@
  }
 
  input:checked + .slider {
-    background-color: #369e61;
+    background-color: var(--principal);
  }
 
  input:checked + .slider::before {
@@ -238,7 +239,7 @@
  }
 
  .titulo p {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 500;
     color: var(--bg-color);
  }
@@ -282,7 +283,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background:#369e61; 
+    background:var(--principal); 
     border-radius: 1rem;
  }
 
@@ -309,7 +310,7 @@
    position: absolute;
    top: 0;
    left: 0;
-   background:#369e61; 
+   background:var(--principal); 
    border-radius: 1rem;
  }
 
@@ -325,7 +326,7 @@
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 2px solid #369e61;
+    border: 2px solid var(--principal);
     font-family: 'calibri';
     font-size: 18px;
     outline-color: #074ee7;
@@ -341,7 +342,7 @@
  }
  
  .formulario p a {
-    color: #369e61;
+    color: var(--principal);
     text-decoration: none;
     font-weight: 800;
  }
@@ -352,7 +353,7 @@
 
  .formulario .boton_registrar {
     width: 100%;
-    background:  #369e61;
+    background:  var(--principal);
     border: none;
     padding: 12px;
     color: rgb(223, 223, 223);
@@ -449,15 +450,36 @@
  }
 
  #temas_relacionados #option {
-    width: 10.5rem;
-    height: 15.95rem;
-    background: #cecece;
+    width: 15.5rem;
+    height: 25.95rem;
+    background: var(--bg-color);
     margin: 1rem;
     padding: 0.62rem;
     text-align: center;
     border-radius: 0.62rem;
     cursor: pointer;
     transition: all 300ms;
+    border: 2px solid var(--principal);
+ }
+
+ #Precio {
+    width: 70px;
+    height: 35px;
+    background: var(--principal);
+    border-radius: 10px;
+ }
+
+ #Precio p {
+    margin: auto;
+    color:  black;
+    font-size: 2rem;
+    
+ }
+
+ #Cactus1 {
+   width: auto;
+   height: auto;
+   padding: 20px 20px 10px 20px;
  }
 
  #option:hover {
@@ -474,7 +496,7 @@
  #option h3 {
     font-size: 1.12rem;
     margin-top: 1rem;
-    color: #505050;
+    color: var(--primary-color);
 
  }
 
@@ -483,7 +505,7 @@
  #button-up {
     width: 3.75rem;
     height:  3.75rem;
-    background: #369e61;
+    background: var(--principal);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,7 +548,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background:#369e61; 
+    background:var(--principal); 
  }
 
  .container_footer footer {
@@ -547,7 +569,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    color: #369e61;
+    color: var(--principal);
     text-align: center;
  }
 
@@ -617,7 +639,7 @@
             padding: 1.31rem 80rem 1.31rem 1rem;
             width: 100%;
             align-items: flex-start;
-            color: #369e61;
+            color: var(--principal);
         }
 
         .menu_bar {
@@ -629,7 +651,7 @@
             display: block;
             padding: 1.25rem;
             height: 4.19rem;
-            color: #369e61;
+            color: var(--principal);
             text-decoration: none;
             font-weight: bold;
             font-size: 1.56rem;
