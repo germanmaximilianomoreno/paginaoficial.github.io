@@ -474,6 +474,11 @@
     border-radius: 0.31rem;
  }
 
+ #img_plantas {
+    height: 22rem;
+    width: 100%;
+}
+
  #planta h3 {
     font-size: 1.12rem;
     font-weight: 700;
