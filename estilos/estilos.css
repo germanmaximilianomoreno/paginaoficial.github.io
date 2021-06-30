@@ -197,7 +197,7 @@
     height: 31.25rem;
     position: relative;
     margin-top: 4rem;
-    background-image: url(../imagenes/portadaplanta2.jpg);
+    background-image: url(../imagenes/porta4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -227,20 +227,20 @@
  }
 
  .titulo h1 {
-    font-size: 4.75rem;
-    font-weight: 500;
+    font-size: 6.75rem;
+    font-weight: 700;
     margin-bottom: 1.25rem;
     padding: 10px;
     color: var(--bg-color);
  }
 
  .titulo h1 b {
-   font-weight: 500;
+   font-weight: 700;
  }
 
  .titulo p {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 700;
     color: var(--bg-color);
  }
 
@@ -423,11 +423,12 @@
 
  /* Temas relacionados */
 
- #temas_relacionados a {
+ .contenedor_plantas a {
     text-decoration: none;
+    cursor: default;
  }
 
- #temas_relacionados h3 {
+ .contenedor_plantas h3 {
     font-family: sans-serif;
  }
 
@@ -436,7 +437,7 @@
     font-family: sans-serif;
  }
 
- #temas_relacionados {
+ .contenedor_plantas {
     width: 100%;
     max-width: 140rem;
     margin: auto;
@@ -445,16 +446,11 @@
     justify-content: center;
  }
 
- #temas_relacionados a {
-    cursor: default;
- }
-
- #temas_relacionados #option {
+ .contenedor_plantas #planta {
     width: 15.5rem;
     height: 25.95rem;
     background: var(--bg-color);
     margin: 1rem;
-    padding: 0.62rem;
     text-align: center;
     border-radius: 0.62rem;
     cursor: pointer;
@@ -462,42 +458,22 @@
     border: 2px solid var(--principal);
  }
 
- #Precio {
-    width: 70px;
-    height: 35px;
-    background: var(--principal);
-    border-radius: 10px;
- }
-
- #Precio p {
-    margin: auto;
-    color:  black;
-    font-size: 2rem;
-    
- }
-
- #Cactus1 {
-   width: auto;
-   height: auto;
-   padding: 20px 20px 10px 20px;
- }
-
- #option:hover {
+ #planta:hover {
     box-shadow: var(--sombra);
     transform: translate(-0.31rem, -0.31rem);
  }
 
- #option img {
+ #planta img {
     width: 100%;
     margin-top: 0rem;
     border-radius: 0.31rem;
  }
 
- #option h3 {
+ #planta h3 {
     font-size: 1.12rem;
+    font-weight: 700;
     margin-top: 1rem;
     color: var(--primary-color);
-
  }
 
   /* Botón de subir */
