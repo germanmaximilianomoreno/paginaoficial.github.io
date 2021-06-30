@@ -372,12 +372,17 @@
  .social {
     position:fixed;
     right: 0%;
-    top: 45%;
+    top: 25%;
     z-index: 20000;
  }
 
  .social ul {
     list-style: none;
+ }
+
+ #Contactanos {
+    height: 250px;
+    width: 45px;
  }
     
  .social ul li a {
