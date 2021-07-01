@@ -24,6 +24,7 @@ function main(){
 
 };
 
+
 /*Botón de subir*/
 
 document.getElementById("button-up").addEventListener("click", scrollUp);
