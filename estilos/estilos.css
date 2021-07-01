@@ -88,7 +88,7 @@
     float: left;
  }
 
- nav .alinear_menu {
+ nav #alinear_menu {
    display: flex;
    justify-content: center;
  }
@@ -659,7 +659,7 @@
             left: 50%;
         }
 
-        nav .alinear_menu {
+        nav #alinear_menu {
             justify-content: left;
         }
      }
