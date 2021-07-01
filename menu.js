@@ -2,11 +2,7 @@
 
 $(document).ready(main)
 
-
-
-
 var contador = 1;
-
 
 function main(){
     $('.menu_bar').click(function(){
@@ -28,7 +24,11 @@ function main(){
 
 };
 
-
+function ocultar() {
+    if (contador == 0){
+        document.getElementById("nav").style.display = "none";
+    }
+}
 
 /*Botón de subir*/
 
