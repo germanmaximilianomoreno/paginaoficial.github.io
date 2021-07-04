@@ -2,20 +2,17 @@
 <html lang="en">
 
 <head>
-   <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivero Leo - Inicio</title>
     
     <link rel="icon" href="imagenes/logoLeo.ico">
     <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="fonts.css">
     <meta name="author" content="Maximiliano Moreno"> 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <script src="https://kit.fontawesome.com/9db0557e4b.js" crossorigin="anonymous"></script>
-    
     
 </head>
 
@@ -31,13 +28,13 @@
               <a class="bt-menu" onclick='document.getElementById("nav").style.display = "block";'><span class="icon-list"></span>Menú</a>
           </div>
 
-          <div id="inicio">
+         <div id="inicio">
               <Nav id="nav">  
 
                   <!--Logo de la página-->
 
                   <div>
-                       <img class="logo" src="imagenes/logoLeo.png" alt="Logo" title="Logo">
+                       <img class="logo" src="imagenes/Vivero Leo1.png" alt="Logo" title="Logo">
                   </div>
 
                   
@@ -47,26 +44,31 @@
                   <div id="alinear_menu">
                      
                   <ul>
+                      <li><a href="https://www.google.com/maps/place/Concordia,+Entre+R%C3%ADos/@-31.3785691,-58.1116616,12z/data=!3m1!4b1!4m5!3m4!1s0x95ade8093e560701:0x5d1d34b223a6f091!8m2!3d-31.3913921!4d-58.017434" target="_blank"><i class="fas fa-map-marker-alt"></i>&nbsp Concordia - Entre Rios <br> &nbsp Argentina</a></li>
                       <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
-                      <li><a href="#Aromáticas_Verduras" onclick="ocultar();">Aromáticas y Verduras</a></li>
-                      <li><a href="#De_Jardín"onclick="ocultar();">De Jardín</a></li>
-                      <li><a href="#Con_Flores"onclick="ocultar();">Con Flores</a></li>
-                      <li><a href="#Citrus"onclick="ocultar();">Citrus</a></li>
-                      <li><a href="#Cactus_Suculentas"onclick="ocultar();">&nbsp&nbspCactus y<br> Suculentas</a></li> 
-                      <li><a href="#Arbolitos_Palmeras"onclick="ocultar();">Arbolitos</a></li>       
+                      <li><a href="#Aromáticas_Verduras" onclick="ocultar();"><i class="fas fa-seedling"></i>Aromáticas y Verduras</a></li>
+                      <li><a href="#De_Jardín"onclick="ocultar();"><i class="fas fa-leaf"></i>De Jardín</a></li>
+                      <li><a href="#Con_Flores"onclick="ocultar();"><i class="fas fa-spa"></i>Con Flores</a></li>
+                      <li><a href="#Citrus"onclick="ocultar();"><i class="fas fa-lemon"></i>Citrus</a></li>
+                      <!--<li><a href="#Cactus_Suculentas"onclick="ocultar();">&nbsp&nbspCactus y<br> Suculentas</a></li>-->
+                      <li><a href="#Arbolitos_Palmeras"onclick="ocultar();"><i class="fab fa-canadian-maple-leaf"></i>Arbolitos</a></li>
+                      <li><a href="#Yuyitos"onclick="ocultar();"><i class="fas fa-holly-berry"></i>Yuyitos</a></li>   
+                      <div id="ctn-icon-search">
+                        <i class="fas fa-search" id="icon-search"></i>
+                     </div>
                   </ul>
 
                 </div>
 
               </Nav>
 
-              <!--Modo oscuro-->
+              
+              
 
-              <div class="theme-switch-wrapper">
+                <!--Buscador Interno-->
 
-                 <div id="ctn-icon-search">
-                    <i class="fas fa-search" id="icon-search"></i>
-                 </div>
+                 <!--Modo oscuro
+                 <div class="theme-switch-wrapper">
 
                 <label for="checkbox" class="theme-switch">
                   
@@ -86,7 +88,7 @@
 
                 </label>
 
-            </div>
+            </div>-->
 
           </div>
           
@@ -95,6 +97,9 @@
       </div>
        
    </header>
+
+
+   <!--Buscador Interno-->
 
    <div id="ctn-bars-search">
       <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
@@ -105,6 +110,7 @@
       <li><a href="#De_Jardín"><i class="fas fa-search"></i>De Jardín</a></li>
       <li><a href="#Con_Flores"><i class="fas fa-search"></i>Con Flores</a></li>
       <li><a href="#Lavanda"><i class="fas fa-search"></i>Lavanda</a></li>
+      <li><a href="#Plantines con Flores"><i class="fas fa-search"></i>Plantines con Flores</a></li>
       <li><a href="#Incienso"><i class="fas fa-search"></i>Incienso</a></li>
       <li><a href="#Ciboulette"><i class="fas fa-search"></i>Ciboulette</a></li>
       <li><a href="#Albahaca Perenne"><i class="fas fa-search"></i>Albahaca Perenne</a></li>
@@ -210,9 +216,18 @@
       <li><a href="#Palmera Cica"><i class="fas fa-search"></i>Palmera Cica</a></li>
       <li><a href="#Palmera Yatay"><i class="fas fa-search"></i>Palmera Yatay</a></li>
       <li><a href="#Vasitos de Telgopor"><i class="fas fa-search"></i>Vasitos de Telgopor</a></li>
+      <li><a href="#Yuyitos"><i class="fas fa-search"></i>Yuyitos</a></li>
+      <li><a href="#Ficus Negro"><i class="fas fa-search"></i>Ficus Negro</a></li>
+      <li><a href="#Nispero"><i class="fas fa-search"></i>Nispero</a></li>
+      <li><a href="#Camelia"><i class="fas fa-search"></i>Camelia</a></li>
+      <li><a href="#Begonia Alas de Ángel"><i class="fas fa-search"></i>Begonia Alas de Ángel</a></li>
+      <li><a href="#Helecho con Maceta Colgante"><i class="fas fa-search"></i>Helecho con Maceta Colgante</a></li>
+      <li><a href="#Lazo de Amor con Maceta Colgante"><i class="fas fa-search"></i>Lazo de Amor con Maceta Colgante</a></li>
+      <li><a href="#Barquito con Flores Purpuras"><i class="fas fa-search"></i>Barquito con Flores Purpuras</a></li>
    </ul>
 
    <div id="cover-ctn-search"></div>
+
 
    <!--Portada y Título Principal-->
 
@@ -220,21 +235,117 @@
 
      <div class="titulo">
 
-        <div id="particles-js"></div>
-
          <h1>Vivero <b>Leo</b></h1>
          <p>¡Plantas, macetas y mucho más!</p>
+
+         <div class="redes">
+            <a href="https://www.facebook.com/leo.moreno.3705157" target="_blank"><i class="fab fa-facebook-square"></i>Vivero Leo</a>
+         
+            <a href="https://www.instagram.com/viveroleo10/?hl=es-la" target="_blank"><i class="fab fa-instagram-square"></i>viveroleo10</a>
+       </div>
      </div>
 
+     
+
    </div>
+
+
+   <!--Carousel-->
+
+   <div class="carousel">
+
+      <div class="carousel__contenedor">
+
+         <button aria-label="Anterior" class="carousel__anterior">
+            <i class="fas fa-chevron-left"></i>
+         </button>
+
+         <div class="carousel__lista">
+
+            <a href="#Aromáticas_Verduras">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Aromática y Verduras.png" alt="Aromática y Verduras">
+            </div>
+            </a>
+
+            <a href="#Citrus">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Citrus1.png" alt="Citrus">
+            </div>
+            </a>
+
+            <a href="#Cactus_Suculentas">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Cactus y Suculentas.png" alt="Cactus y Suculentas">
+            </div>
+            </a>
+
+            <a href="#Arbolitos_Palmeras">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Arbolitos y Palmeras.png" alt="Arbolitos y Palmeras">
+            </div>
+            </a>
+
+            <a href="#De_Jardín">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/De jardin.png" alt="Plantas de Jardín">
+            </div>
+            </a>
+
+            <a href="#Con_Flores">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Con Flores.png" alt="Plantas con Flores">
+            </div>
+            </a>
+
+            <a href="#Macetas_Plasticas">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Macetas de Plastico.png" alt="Macetas Plasticas">
+            </div>
+            </a>
+
+            <a href="#Macetas_Cemento">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Macetas de Cemento.png" alt="Macetas de Cemento">
+            </div>
+            </a>
+
+            <a href="#Macetas_Madera">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Macetas de Madera.png" alt="Macetas de Madera">
+            </div>
+            </a>
+
+            <a href="#Portamacetas">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Portamacetas.png" alt="Portamacetas">
+            </div>
+            </a>
+
+            <a href="#Yuyitos">
+            <div class="carousel__elemento">
+               <img src="imagenes/Carousel/Yuyitos para el Mate, Té.png" alt="Yuyitos para el Mate, Té">
+            </div>
+            </a>
+
+         </div>
+
+         <button aria-label="Siguiente" class="carousel__siguiente">
+            <i class="fas fa-chevron-right"></i>
+         </button>
+
+      </div>
+
+     <!--<div role="tablist" class="carousel__indicadores"></div>-->
+
+   </div>
+
 
    <!--Hipervínculo hacia el contenido-->
    
    <div id="Aromáticas_Verduras"></div>
 
    <br><br><br><br><br>
-   
-   <!--Contenido-->
 
     <section class="main">        
 
@@ -246,271 +357,915 @@
 
                     <div class="social">
                         <ul>
-                            <img src="imagenes/Contactanos.png" alt="" id="Contactanos">
+                           
+                            <!--<div class="contactanos"><h3>C <br/>O <br/>N <br/>T <br/>A <br/>C <br/>T <br>O</h3></div>-->
                             <li><a href="https://www.facebook.com/leo.moreno.3705157" target="_blank" class="icon-facebook"></a></li>
-                            <!--<li><a href="" target="_blank" class="icon-twitter"></a></li>-->
                             <li><a href="https://www.instagram.com/viveroleo10/?hl=es-la" target="_blank" class="icon-instagram"></a></li>
-                            <!--<li><a href="" target="_blank" class="icon-youtube"></a></li>
-                            <li><a href="" target="_blank" class="icon-google-plus"></a></li>
-                            <li><a href="" target="_blank" class="icon-twitch"></a></li>-->
                         </ul>
                     </div>
 
                     <br><br>
 
-                    <!--Hipervínculo hacia temas relacionados-->
-
-                    <div id="relacionados"></div>
-
             </article>
 
-            <!--Temas relacionados-->
+
+            <!--Contenido-->
 
             <article class="otros">
 
-                <h2>Plantas Aromáticas y Verduras</h2>
+               <h2>Plantas Aromáticas y Verduras</h2>
 
-                <div class ="contenedor_plantas">
-                        
-                        <div id="planta">
-                           <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Lavanda.jpg" alt="Lavanda" id="img_plantas">
-                           <h3>Lavanda</h3>
+               <div class ="container__card">
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                           <div class="body__card_front">              
+                              <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Lavanda.jpg" alt="Incienso" id="img_plantas">
+                              <h3>Lavanda</h3>
+
+                           </div>
+
+                       </div>
+
+                       <div class="card__back">
+
+                           <div class="body__card_back">
+                              
+                              <h3>Lavanda</h3>
+
+                              <p>La Lavanda es un género de plantas de la familia de las lamiáceas, que contiene unas sesenta especies y taxones infra-específicos aceptados de los algo más de doscientos descritos;​ se las conoce como lavanda, alhucema, espliego o cantueso, entre otros muchos nombres comunes.</p>
+
+                           </div>
+
+                       </div>
+
+                       <div id="Lavanda"></div>
+
+                     </div>
+                  </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                           <div class="body__card_front">              
+                       
+                              <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Incienso.jpg" alt="Incienso" id="img_plantas">
+                              <h3>Incienso</h3>
+
+                           </div>
+
+                       </div>
+
+                       <div class="card__back">
+
+                           <div class="body__card_back">
+
+                              <h3>Incienso</h3>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                           </div>
+
+                       </div>
+
+                       <div id="Incienso"></div>
+
+                     </div>
+                  </div>
+
+              
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                       <div class="card__front">
+
+                          <div class="body__card_front">              
+                 
+                             <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Albahaca Perenne.jpg" alt="Albahaca Perenne" id="img_plantas">
+                             <h3>Albahaca Perenne</h3>
+
+                          </div>
+
+                       </div>
+
+                       <div class="card__back">
+
+                          <div class="body__card_back">
+
+                             <h3>Albahaca Perenne</h3>
+                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                          </div>
+                       </div>
+
+                       <div id="Albahaca Perenne"></div>
+
+                    </div>
+                 </div>
+
+        
+
+                 <div class="card__father">
+
+                     <div class="card">
+
+                       <div class="card__front">
+
+                           <div class="body__card_front">              
+           
+                             <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Ciboulette.png" alt="Ciboulette" id="img_plantas">
+                             <h3>Ciboulette</h3>
+
+                          </div>
+
                         </div>
 
-                        <div id="Lavanda"></div>
+                       <div class="card__back">
 
+                           <div class="body__card_back">
+  
+                              <h3>Ciboulette</h3>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+  
+                          </div>
 
-                    
-                        <div id="planta">
-                           <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Incienso.jpg" alt="Incienso" id="img_plantas">
-                           <h3>Incienso</h3>
-                        </div>
-                             
-                        <div id="Incienso"></div>
-
-
-
-                        <div id="planta">
-                           <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Albahaca Perenne.jpg" alt="Albahaca Perenne" id="img_plantas">
-                           <h3>Albahaca Perenne</h3>
-                        </div>
-
-                        <div id="Albahaca Perenne"></div>
-                         
-
-
-                        <div id="planta">
-                           <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Ciboulette.png" alt="Ciboulette" id="img_plantas">
-                           <h3>Ciboulette</h3>
-                        </div> 
+                       </div>
 
                         <div id="Ciboulette"></div>
-                    
+
+                     </div>
+                 </div>
 
 
-                        <div id="planta">
-                           <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Romero.jpg" alt="Romero" id="img_plantas">
-                           <h3>Romero</h3>
+
+                 <div class="card__father">
+
+                    <div class="card">
+
+                       <div class="card__front">
+
+                            <div class="body__card_front">              
+        
+                             <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Romero.jpg" alt="Romero" id="img_plantas">
+                             <h3>Romero</h3>
+
+                           </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                            <div class="body__card_back">
+
+                              <h3>Romero</h3>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                           </div>
+
                         </div>
 
                         <div id="Romero"></div>
-        
+
+                     </div>
+                 </div>
 
 
-                        <div id="planta">
-                           <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Cedron.jpg" alt="Cedron" id="img_plantas">
-                           <h3>Cedron</h3>
-                        </div>
 
-                        <div id="Cedron"></div>
-                    
+                 <div class="card__father">
+
+                    <div class="card">
+
+                       <div class="card__front">
+
+                          <div class="body__card_front">              
+      
+                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Cedron.jpg" alt="Cedron" id="img_plantas">
+                            <h3>Cedron</h3>
+
+                         </div>
+
+                      </div>
+
+                      <div class="card__back">
+
+                          <div class="body__card_back">
+
+                            <h3>Cedron</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
+                      </div>
+
+                      <div id="Cedron"></div>
+
+                     </div>
+                 </div>
 
 
-                      <div id="planta">
-                         <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Citronella.jpg" alt="Citronella" id="img_plantas">
-                         <h3>Citronella</h3>
+
+                 <div class="card__father">
+
+                    <div class="card">
+
+                      <div class="card__front">
+
+                          <div class="body__card_front">              
+      
+                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Citronella.jpg" alt="Citronella" id="img_plantas">
+                            <h3>Citronella</h3>
+
+                         </div>
+
+                      </div>
+
+                      <div class="card__back">
+
+                          <div class="body__card_back">
+
+                            <h3>Citronella</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                       </div>
 
                       <div id="Citronella"></div>
-                    
+
+                    </div>
+                </div>
 
 
-                      <div id="planta">
-                         <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Burrito.jpg" alt="Burrito" id="img_plantas">
-                         <h3>Burrito</h3>
+
+                <div class="card__father">
+ 
+                    <div class="card">
+
+                       <div class="card__front">
+
+                          <div class="body__card_front">              
+      
+                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Burrito.jpg" alt="Burrito" id="img_plantas">
+                            <h3>Burrito</h3>
+
+                          </div>
+
+                       </div>
+
+                      <div class="card__back">
+
+                          <div class="body__card_back">
+
+                            <h3>Burrito</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                       </div>
 
                       <div id="Burrito"></div>
-        
+
+                     </div>
+                 </div>
 
 
-                      <div id="planta">
-                         <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Yerba Buena - Menta Redonda.jpg" alt="Yerba Buena - Menta Redonda" id="">
-                         <h3>Yerba Buena - Menta Redonda</h3>
+
+                 <div class="card__father">
+
+                    <div class="card">
+
+                      <div class="card__front">
+
+                          <div class="body__card_front">              
+      
+                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Yerba Buena - Menta Redonda.jpg" alt="Yerba Buena - Menta Redonda" id="img_plantas">
+                            <h3>Yerba Buena - Menta Redonda</h3>
+
+                         </div>
+
+                      </div>
+
+                      <div class="card__back">
+
+                          <div class="body__card_back">
+
+                            <h3>Yerba Buena - Menta Redonda</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                       </div>
 
                       <div id="Yerba Buena - Menta Redonda"></div>
-        
-  
-                    
-                      <div id="planta">
-                         <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Menta Peperina.jpg" alt="Menta Peperina" id="img_plantas">
-                         <h3>Menta Peperina</h3>
+
+                     </div>
+                 </div>
+
+
+
+                 <div class="card__father">
+
+                    <div class="card">
+
+                       <div class="card__front">
+
+                          <div class="body__card_front">              
+      
+                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Menta Peperina.jpg" alt="Menta Peperina" id="img_plantas">
+                            <h3>Menta Peperina</h3>
+
+                          </div>
+
+                       </div>
+
+                      <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Menta Peperina</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                       </div>
 
                       <div id="Menta Peperina"></div>
-         
 
-                    
-                        <div id="planta">
-                           <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Buscapina.jpg" alt="Buscapina" id="img_plantas">
+                     </div>
+                 </div>
+
+
+
+                 <div class="card__father">
+
+                    <div class="card">
+
+                       <div class="card__front">
+
+                          <div class="body__card_front">              
+      
+                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Buscapina.jpg" alt="Buscapina" id="img_plantas">
+                            <h3>Buscapina</h3>
+
+                          </div>
+
+                       </div>
+
+                      <div class="card__back">
+
+                          <div class="body__card_back">
+
                            <h3>Buscapina</h3>
-                        </div>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
 
-                        <div id="Buscapina"></div>
-         
+                         </div>
 
-                    
-                        <div id="planta">
-                           <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Certal.jpg" alt="Certal" id="img_plantas">
+                      </div>
+
+                      <div id="Buscapina"></div>
+
+                     </div>
+                 </div>
+
+
+
+                 <div class="card__father">
+
+                    <div class="card">
+
+                       <div class="card__front">
+
+                          <div class="body__card_front">              
+      
+                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Certal.jpg" alt="Certal" id="img_plantas">
+                            <h3>Certal</h3>
+
+                         </div>
+
+                       </div>
+
+                      <div class="card__back">
+
+                          <div class="body__card_back">
+
                            <h3>Certal</h3>
-                        </div>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
 
-                        <div id="Certal"></div>
-        
+                         </div>
 
-                    
-                        <div id="planta">
+                      </div>
+
+                      <div id="Certal"></div>
+
+                     </div>
+                 </div>
+
+
+
+                 <div class="card__father">
+
+                    <div class="card">
+
+                       <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Melisa (Toronjil).jpg" alt="Melisa (Toronjil)" id="img_plantas">
                            <h3>Melisa (Toronjil)</h3>
-                        </div>
 
-                        <div id="Melisa (Toronjil)"></div>
-        
+                         </div>
 
-                    
-                        <div id="planta">
+                       </div>
+
+                      <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Melisa (Toronjil)</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
+                      </div>
+
+                      <div id="Melisa (Toronjil)"></div>
+
+                     </div>
+                 </div>
+
+
+
+                 <div class="card__father">
+
+                    <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Boldo (Paraguayo).jpg" alt="Boldo (Paraguayo)" id="img_plantas">
                            <h3>Boldo (Paraguayo)</h3>
+
+                         </div>
+
                         </div>
 
-                        <div id="Boldo (Paraguayo)"></div>
-        
+                      <div class="card__back">
 
-                    
-                        <div id="planta">
+                          <div class="body__card_back">
+
+                           <h3>Boldo (Paraguayo)</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
+                      </div>
+
+                      <div id="Boldo (Paraguayo)"></div>
+
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Poleo.jpg" alt="Poleo" id="img_plantas">
                            <h3>Poleo</h3>
+
+                         </div>
+
                         </div>
 
-                        <div id="Poleo"></div>
-        
+                        <div class="card__back">
 
-                    
-                        <div id="planta">
+                          <div class="body__card_back">
+
+                           <h3>Poleo</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
+                        </div>
+
+                      <div id="Poleo"></div>
+
+                     </div>
+                  </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Carqueja.jpg" alt="Carqueja" id="img_plantas">
                            <h3>Carqueja</h3>
+
+                         </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Carqueja</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Carqueja"></div>
-        
 
-                    
-                        <div id="planta">
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Malva.jpg" alt="Malva" id="img_plantas">
                            <h3>Malva</h3>
+
+                         </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Malva</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Malva"></div>
-        
 
-                    
-                        <div id="planta">
+                     </div>
+                  </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Frutilla.jpg" alt="Frutilla" id="img_plantas">
                            <h3>Frutilla</h3>
+
+                         </div>
+
                         </div>
 
-                        <div id="Frutilla"></div>
-        
+                        <div class="card__back">
 
-                    
-                        <div id="planta">
+                          <div class="body__card_back">
+
+                           <h3>Frutilla</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
+                        </div>
+ 
+                        <div id="Frutilla"></div>
+
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Plantines Lechuga.jpg" alt="Plantines de Lechuga" id="img_plantas">
                            <h3>Plantines de Lechuga</h3>
+
+                         </div>
+ 
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Plantines de Lechuga</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Plantines de Lechuga"></div>
-        
 
-                    
-                        <div id="planta">
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Plantines de Acelga.jpg" alt="Plantines de Acelga" id="img_plantas">
                            <h3>Plantines de Acelga</h3>
+
+                         </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Plantines de Acelga</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Plantines de Acelga"></div>
-        
 
-                    
-                        <div id="planta">
+                     </div>
+                  </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Zanahoria.png" alt="Zanahoria" id="img_plantas">
                            <h3>Zanahoria</h3>
+
+                         </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Zanahoria</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Zanahoria"></div>
-        
 
-                    
-                        <div id="planta">
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Apio.png" alt="Apio" id="img_plantas">
                            <h3>Apio</h3>
+
+                         </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Apio</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Apio"></div>
-        
 
-                    
-                        <div id="planta">
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+  
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Oregano.jpg" alt="Oregano" id="img_plantas">
                            <h3>Oregano</h3>
+
+                         </div>
+  
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Oregano</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Oregano"></div>
-        
 
-                    
-                        <div id="planta">
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Perejil.png" alt="Perejil" id="img_plantas">
                            <h3>Perejil</h3>
+
+                         </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Perejil</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Perejil"></div>
-        
-                      
-                    
-                        <div id="planta">
+
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+ 
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Cilantro.png" alt="Cilantro" id="img_plantas">
                            <h3>Cilantro</h3>
+
+                         </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Cilantro</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Cilantro"></div>
 
+                     </div>
+                 </div>
 
-                        <div id="planta">
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Cebolla de Verdeo.jpg" alt="Cebolla de Verdeo" id="img_plantas">
                            <h3>Cebolla de Verdeo</h3>
+
+                         </div>
+
+                        </div>
+  
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Cebolla de Verdeo</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
-                        <div id="Ciboulette"></div>
+                        <div id="Cebolla de Verdeo"></div>
 
-                        <div id="planta">
+                     </div>
+                 </div>
+
+
+
+                  <div class="card__father">
+
+                     <div class="card">
+
+                        <div class="card__front">
+
+                          <div class="body__card_front">              
+      
                            <img loading="lazy" src="imagenes/PLANTINES/Aromáticas y Verduras/Cedron de Hojas Largas.jpg" alt="Cedron de Hojas Largas" id="img_plantas">
                            <h3>Cedron de Hojas Largas</h3>
+
+                         </div>
+
+                        </div>
+
+                        <div class="card__back">
+
+                          <div class="body__card_back">
+
+                           <h3>Cedron de Hojas Largas</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                         </div>
+
                         </div>
 
                         <div id="Cedron de Hojas Largas"></div>
 
-               </div>
+                     </div>
+                 </div>
+
+               </div>                      
 
                <div id="Citrus"></div>
 
@@ -529,37 +1284,108 @@
          <article class="otros">
    
           <h2>Citrus</h2>
-   
-          <div class = "contenedor_plantas">
+          
+          <div class ="container__card">
 
-                   <div id="planta">
-                    <img loading="lazy" src="imagenes/PLANTINES/Citrus/Imagen Limon.jpg" alt="Imagen Limon" id="img_plantas">
-                  </div>
-              
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Citrus/Imagen Limon.jpg" alt="Imagen Limon" id="img_plantas">
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
 
 
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Citrus/Citrus.jpg" alt="Citrus" id="img_plantas">
-                     <h3>Citrus</h3>
-                  </div>
+                     </div>
 
-                  <div id="Citrus"></div>
+                 </div>
 
+                 <div id="Lavanda"></div>
 
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Citrus/Imagen Naranjas.jpg" alt="Imagen Naranjas" id="img_plantas">
-                  </div>
-                  
                </div>
+            </div>
 
-               <div id="Cactus_Suculentas"></div>
 
-               <br><br><br><br>
 
-           </article>
+            <div class="card__father">
 
-        </section>
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Citrus/Citrus.jpg" alt="Citrus" id="img_plantas">
+                        <h3>Citrus</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Citrus</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Citrus"></div>
+
+               </div>
+            </div>
+
+        
+
+            <div class="card__father">
+
+               <div class="card">
+
+                 <div class="card__front">
+
+                    <div class="body__card_front">              
+           
+                       <img loading="lazy" src="imagenes/PLANTINES/Citrus/Imagen Naranjas.jpg" alt="Imagen Naranjas" id="img_plantas">
+
+                    </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                    <div class="body__card_back">
+
+
+                    </div>
+                 </div>
+
+                 <div id="Albahaca Perenne"></div>
+
+              </div>
+           </div>
+
+         </div>  
+
+
+         <div id="Cactus_Suculentas"></div>
+
+         <br><br><br><br>
+
+       </article>
+
+     </section>
 
     </section>
 
@@ -570,34 +1396,78 @@
          <article class="otros">
    
           <h2>Cactus y Suculentas</h2>
-   
-          <div class = "contenedor_plantas">
-              
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Cactus y Suculentas/Cactus y Suculentas.jpg" alt="Cactus y Suculentas" id="img_plantas">
-                     <h3>Cactus y Suculentas</h3>
-                  </div>
 
-                  <div id="Cactus y Suculentas"></div>
+          <div class ="container__card">
 
+            <div class="card__father">
 
+               <div class="card">
 
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Cactus y Suculentas/Cactus y Suculentas en Cuencos.jpg" alt="Cactus y Suculentas en Cuencos" id="">
-                     <h3>Cactus y Suculentas en Cuencos</h3>
-                  </div>
+                  <div class="card__front">
 
-                  <div id="Cactus y Suculentas en Cuencos"></div>
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Cactus y Suculentas/Cactus y Suculentas.jpg" alt="Cactus y Suculentas" id="img_plantas">
+                        <h3>Cactus y Suculentas</h3>
+                     </div>
 
+                 </div>
 
-                  
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Cactus y Suculentas</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Cactus y Suculentas"></div>
+
                </div>
+            </div>
 
-               <div id="Arbolitos_Palmeras"></div>
 
-               <br><br><br><br>
 
-           </article>
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Cactus y Suculentas/Cactus y Suculentas en Cuencos.jpg" alt="Cactus y Suculentas en Cuencos" id="img_plantas">
+                        <h3>Cactus y Suculentas en Cuencos</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Cactus y Suculentas en Cuencos</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Cactus y Suculentas en Cuencos"></div>
+
+               </div>
+            </div>
+
+         </div>  
+
+         <div id="Arbolitos_Palmeras"></div>
+
+         <br><br><br><br>
+
+         </article>
 
         </section>
 
@@ -610,64 +1480,248 @@
          <article class="otros">
    
           <h2>Arbolitos y Palmeras</h2>
-   
-          <div class = "contenedor_plantas">
-              
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Arbolito de Pino.jpg" alt="Arbolito de Pino" id="img_plantas">
-                     <h3>Arbolito de Pino</h3>
-                  </div>
 
-                  <div id="Arbolito de Pino"></div>
-                  
+          <div class ="container__card">
 
+            <div class="card__father">
 
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Arbol de Gualeguay.jpg" alt="Arbol de Gualeguay" id="img_plantas">
-                     <h3>Arbol de Gualeguay</h3>
-                  </div>
+               <div class="card">
 
-                  <div id="Arbol de Gualeguay"></div>
+                  <div class="card__front">
 
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Arbolito de Pino.jpg" alt="Arbolito de Pino" id="img_plantas">
+                        <h3>Arbolito de Pino</h3>
+                     </div>
 
+                 </div>
 
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Palmeras Pindo.jpg" alt="Palmeras Pindo" id="img_plantas">
-                     <h3>Palmeras Pindo</h3>
-                  </div>
+                 <div class="card__back">
 
-                  <div id="Palmeras Pindo"></div>
+                     <div class="body__card_back">
 
+                        <h3>Arbolito de Pino</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
 
+                     </div>
 
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Palmera Cica.jpg" alt="Palmera Cica" id="img_plantas">
-                     <h3>Palmera Cica</h3>
-                  </div>
+                 </div>
 
-                  <div id="Palmera Cica"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Palmera Yatay.jpg" alt="Palmera Yatay" id="img_plantas">
-                     <h3>Palmera Yatay</h3>
-                  </div>
-
-                  <div id="Palmera Yatay"></div>
+                 <div id="Arbolito de Pino"></div>
 
                </div>
+            </div>
 
-               <div id="De_Jardín"></div>
 
-               <br><br><br><br>
 
-           </article>
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Arbol de Gualeguay.jpg" alt="Arbol de Gualeguay" id="img_plantas">
+                        <h3>Arbol de Gualeguay</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Arbol de Gualeguay</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Arbol de Gualeguay"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Palmeras Pindo.jpg" alt="Palmeras Pindo" id="img_plantas">
+                        <h3>Palmeras Pindo</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Palmeras Pindo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Palmeras Pindo"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Palmera Cica.jpg" alt="Palmera Cica" id="img_plantas">
+                        <h3>Palmera Cica</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Palmera Cica</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Palmera Cica"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Palmera Yatay.jpg" alt="Palmera Yatay" id="img_plantas">
+                        <h3>Palmera Yatay</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Palmera Yatay</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Palmera Yatay"></div>
+
+               </div>
+            </div>
+
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Ficus Negro.jpg" alt="Ficus Negro" id="img_plantas">
+                        <h3>Ficus Negro</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Ficus Negro</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Ficus Negro"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Arbolitos y Palmeras/Nispero.jpg" alt="Nispero" id="img_plantas">
+                        <h3>Nispero</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Nispero</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Nispero"></div>
+
+               </div>
+            </div>
+
+         </div>  
+
+         <div id="De_Jardín"></div>
+
+         <br><br><br><br>
+
+         </article>
 
         </section>
 
     </section>
-    
     
     <section class="main"> 
 
@@ -677,216 +1731,756 @@
 
             <h2>Plantas de Jardín</h2>
 
-            <div class = "contenedor_plantas">
-                
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Planta Acuatica.jpg" alt="Planta Acuatica" id="img_plantas">
-                       <h3>Planta Acuatica</h3>
-                    </div>
+            <div class ="container__card">
 
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">   
+
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Planta Acuatica.jpg" alt="Planta Acuatica" id="img_plantas">
+                           <h3>Planta Acuatica</h3>
+
+                        </div>
+   
+                    </div>
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Planta Acuatica</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Planta Acuatica"></div>
-
-
-                
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Achira Española.jpg" alt="Achira Española" id="img_plantas">
-                       <h3>Achira Española</h3>
-                    </div>
-
-                    <div id="Achira Española"></div>
-                
-
-
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Cretona.jpg" alt="Cretona" id="img_plantas">
-                       <h3>Cretona</h3>
-                    </div>
-
-                    <div id="Cretona"></div>
-
-
-
-                    <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Mas Tipos de Cretonas.jpg" alt="Mas Tipos de Cretonas" id="img_plantas">
-                     <h3>Mas Tipos de Cretonas</h3>
+   
                   </div>
+               </div>
 
-                  <div id="Mas Tipos de Cretonas"></div>
 
 
-                
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Helecho.jpg" alt="Helecho" id="img_plantas">
-                       <h3>Helecho</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Achira Española.jpg" alt="Achira Española" id="img_plantas">
+                           <h3>Achira Española</h3>
+                        </div>
+   
                     </div>
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Achira Española</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
+                    <div id="Achira Española"></div>
+   
+                  </div>
+               </div>
 
+
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Cretona.jpg" alt="Cretona" id="img_plantas">
+                           <h3>Cretona</h3>
+                        </div>
+   
+                    </div>
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Cretona</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
+                    <div id="Cretona"></div>
+   
+                  </div>
+               </div>
+
+
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Mas Tipos de Cretonas.jpg" alt="Mas Tipos de Cretonas" id="img_plantas">
+                           <h3>Mas Tipos de Cretonas</h3>
+                        </div>
+   
+                    </div>
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Mas Tipos de Cretonas</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
+                    <div id="Mas Tipos de Cretonas"></div>
+   
+                  </div>
+               </div>
+
+
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Helecho.jpg" alt="Helecho" id="img_plantas">
+                           <h3>Helecho</h3>
+                        </div>
+   
+                    </div>
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Helecho</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Helecho"></div>
-    
+   
+                  </div>
+               </div>
 
-                
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Cañitas de Jardín.jpg" alt="Cañitas de Jardín" id="img_plantas">
-                       <h3>Cañitas de Jardín</h3>
+
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Cañitas de Jardín.jpg" alt="Cañitas de Jardín" id="img_plantas">
+                           <h3>Cañitas de Jardín</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Cañitas de Jardín</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Cañitas de Jardín"></div>
-    
+   
+                  </div>
+               </div>
 
-                
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Baras de San Jorge.jpg" alt="Baras de San Jorge" id="img_plantas">
-                       <h3>Baras de San Jorge</h3>
+
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Baras de San Jorge.jpg" alt="Baras de San Jorge" id="img_plantas">
+                           <h3>Baras de San Jorge</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Baras de San Jorge</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Baras de San Jorge"></div>
-    
+   
+                  </div>
+               </div>
 
-                
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Baras de San Jorge con bordes amarillos.jpg" alt="Baras de San Jorge con bordes amarillos" id="">
-                       <h3>Baras de San Jorge con bordes amarillos</h3>
+
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Baras de San Jorge con bordes amarillos.jpg" alt="Baras de San Jorge con bordes amarillos" id="img_plantas">
+                           <h3>Baras de San Jorge con bordes amarillos</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Baras de San Jorge con bordes amarillos</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Baras de San Jorge con bordes amarillos"></div>
-    
+   
+                  </div>
+               </div>
 
-                
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Porpurina.jpg" alt="Porpurina" id="img_plantas">
-                       <h3>Porpurina</h3>
+
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Porpurina.jpg" alt="Porpurina" id="img_plantas">
+                           <h3>Porpurina</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Porpurina</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Porpurina"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                       <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Singonio.jpg" alt="Singonio" id="img_plantas">
-                       <h3>Singonio</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Singonio.jpg" alt="Singonio" id="img_plantas">
+                           <h3>Singonio</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Singonio</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Singonio"></div>
    
+                  </div>
+               </div>
 
 
-                    <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Aloe vera.jpg" alt="Aloe vera" id="img_plantas">
-                     <h3>Aloe vera</h3>
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Aloe vera.jpg" alt="Aloe vera" id="img_plantas">
+                           <h3>Aloe vera</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Aloe vera</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Aloe vera"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Aloe vera de hojas largas.jpg" alt="Aloe vera de hojas largas" id="img_plantas">
-                     <h3>Aloe vera de hojas largas</h3>
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Aloe vera de hojas largas.jpg" alt="Aloe vera de hojas largas" id="img_plantas">
+                           <h3>Aloe vera de hojas largas</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Aloe vera de hojas largas</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Aloe vera de hojas largas"></div>
+   
+                  </div>
+               </div>
 
 
-                  
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Gasaña.jpg" alt="Gasaña" id="img_plantas">
-                      <h3>Gasaña</h3>
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Gasaña.jpg" alt="Gasaña" id="img_plantas">
+                           <h3>Gasaña</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Gasaña</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Gasaña"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Rayito de Sol.jpg" alt="Rayito de Sol" id="img_plantas">
-                      <h3>Rayito de Sol</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Rayito de Sol.jpg" alt="Rayito de Sol" id="img_plantas">
+                           <h3>Rayito de Sol</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Rayito de Sol</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Rayito de Sol"></div>
+   
+                  </div>
+               </div>
 
 
-                  
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Dolar.jpg" alt="Dolar" id="img_plantas">
-                      <h3>Dolar</h3>
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Dolar.jpg" alt="Dolar" id="img_plantas">
+                           <h3>Dolar</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Dolar</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Dolar"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Canilla de Negro.jpg" alt="Canilla de Negro" id="img_plantas">
-                      <h3>Canilla de Negro</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Canilla de Negro.jpg" alt="Canilla de Negro" id="img_plantas">
+                           <h3>Canilla de Negro</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Canilla de Negro</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Canilla de Negro"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Pino Limon.jpg" alt="Pino Limon" id="img_plantas">
-                      <h3>Pino Limon</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Pino Limon.jpg" alt="Pino Limon" id="img_plantas">
+                           <h3>Pino Limon</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Pino Limon</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Pino Limon"></div>
    
+                  </div>
+               </div>
 
+
+
+               <div class="card__father">
    
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Pino de Jardin.jpg" alt="Pino de Jardin" id="img_plantas">
-                      <h3>Pino de Jardin</h3>
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Pino de Jardin.jpg" alt="Pino de Jardin" id="img_plantas">
+                           <h3>Pino de Jardin</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Pino de Jardin</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Pino de Jardin"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Palo de Agua.jpg" alt="Palo de Agua" id="img_plantas">
-                      <h3>Palo de Agua</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Palo de Agua.jpg" alt="Palo de Agua" id="img_plantas">
+                           <h3>Palo de Agua</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Palo de Agua</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Palo de Agua"></div>
    
+                  </div>
+               </div>
+
+
+
+               <div class="card__father">
    
-
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Calathea Tricolor.jpg" alt="Calathea Tricolor" id="img_plantas">
-                      <h3>Calathea Tricolor</h3>
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Calathea Tricolor.jpg" alt="Calathea Tricolor" id="img_plantas">
+                           <h3>Calathea Tricolor</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Calathea Tricolor</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Calathea Tricolor"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/De Hojas Chicas Obaladas.jpg" alt="De Hojas Chicas Obaladas" id="img_plantas">
-                      <h3>De Hojas Chicas Obaladas</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/De Hojas Chicas Obaladas.jpg" alt="De Hojas Chicas Obaladas" id="img_plantas">
+                           <h3>De Hojas Chicas Obaladas</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>De Hojas Chicas Obaladas</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="De Hojas Chicas Obaladas"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/De Hojas Chicas Tupidas.jpg" alt="De Hojas Chicas Tupidas" id="img_plantas">
-                      <h3>De Hojas Chicas Tupidas</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/De Hojas Chicas Tupidas.jpg" alt="De Hojas Chicas Tupidas" id="img_plantas">
+                           <h3>De Hojas Chicas Tupidas</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>De Hojas Chicas Tupidas</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="De Hojas Chicas Tupidas"></div>
+   
+                  </div>
+               </div>
 
 
 
-                    <div id="planta">
-                      <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Libustro.jpg" alt="Libustro" id="img_plantas">
-                      <h3>Libustro</h3>
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Libustro.jpg" alt="Libustro" id="img_plantas">
+                           <h3>Libustro</h3>
+                        </div>
+   
                     </div>
-
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Libustro</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
                     <div id="Libustro"></div>
    
-           </div>
+                  </div>
+               </div>
 
-           <div id="Con_Flores"></div>
+
+
+               <div class="card__father">
+   
+                  <div class="card">
+   
+                     <div class="card__front">
+   
+                        <div class="body__card_front">              
+                           <img loading="lazy" src="imagenes/PLANTINES/De Jardin/Begonia Alas de Ángel.jpg" alt="Begonia Alas de Ángel" id="img_plantas">
+                           <h3>Begonia Alas de Ángel</h3>
+                        </div>
+   
+                    </div>
+   
+                    <div class="card__back">
+   
+                        <div class="body__card_back">
+   
+                           <h3>Begonia Alas de Ángel</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+   
+                        </div>
+   
+                    </div>
+   
+                    <div id="Begonia Alas de Ángel"></div>
+   
+                  </div>
+               </div>
+   
+            </div> 
+
+            <div id="Con_Flores"></div>
 
             <br><br><br><br>
 
@@ -894,9 +2488,9 @@
 
      </section>     
        
-  </section>
+    </section>
 
-  <section class="main"> 
+    <section class="main"> 
 
    <section class="articles"> 
 
@@ -904,150 +2498,577 @@
 
        <h2>Plantas con Flores</h2>
 
-       <div class = "contenedor_plantas">
-           
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Cangrejo Chico.jpg" alt="Cangrejo Chico" id="img_plantas">
-                  <h3>Cangrejo Chico</h3>
-               </div>
+       <div class ="container__card">
 
-               <div id="Cangrejo Chico"></div>
+         <div class="card__father">
 
+            <div class="card">
 
+               <div class="card__front">
 
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Lazo de Amor.jpg" alt="Lazo de Amor" id="img_plantas">
-                  <h3>Lazo de Amor</h3>
-               </div>
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Plantines con Flores.png" alt="Plantines con Flores" id="img_plantas">
+                     <h3>Plantines con Flores</h3>
 
-               <div id="Lazo de Amor"></div>
+                  </div>
 
+              </div>
 
+              <div class="card__back">
 
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Cangrejo Blanco Grande.jpg" alt="Cangrejo Blanco Grande" id="img_plantas">
-                  <h3>Cangrejo Blanco Grande</h3>
-               </div>
+                  <div class="body__card_back">
 
-               <div id="Cangrejo Blanco Grande"></div>
+                     <h3>Plantines con Flores</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
 
+                  </div>
 
-               
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Mala Madre.jpg" alt="Mala Madre" id="img_plantas">
-                  <h3>Mala Madre</h3>
-               </div>
+              </div>
 
-               <div id="Mala Madre"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Crisantemo.jpg" alt="Crisantemo" id="img_plantas">
-                  <h3>Crisantemo</h3>
-               </div>
-
-               <div id="Crisantemo"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Malvon.jpg" alt="Malvon" id="img_plantas">
-                  <h3>Malvon</h3>
-               </div>
-
-               <div id="Malvon"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Cigarro.jpg" alt="Cigarro" id="img_plantas">
-                  <h3>Cigarro</h3>
-               </div>
-
-               <div id="Cigarro"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Erica.jpg" alt="Erica" id="img_plantas">
-                  <h3>Erica</h3>
-               </div>
-
-               <div id="Erica"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Alegria del Hogar.jpg" alt="Alegria del Hogar Doble" id="img_plantas">
-                  <h3>Alegria del Hogar Doble</h3>
-               </div>
-
-               <div id="Alegria del Hogar Doble"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Taco de Reina.jpg" alt="Taco de Reina" id="img_plantas">
-                  <h3>Taco de Reina</h3>
-               </div>
-
-               <div id="Taco de Reina"></div>
-
-
-               
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Cala.jpg" alt="Cala" id="img_plantas">
-                  <h3>Cala</h3>
-               </div>
-
-               <div id="Cala"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Mariposa.jpg" alt="Mariposa" id="img_plantas">
-                  <h3>Mariposa</h3>
-               </div>
-
-               <div id="Mariposa"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Duranta.jpg" alt="Duranta" id="img_plantas">
-                  <h3>Duranta</h3>
-               </div>
-
-               <div id="Duranta"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Asalea Simple.jpg" alt="Asalea Simple" id="img_plantas">
-                  <h3>Asalea Simple</h3>
-               </div>
-
-               <div id="Asalea Simple"></div>
-
-
-
-               <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Asalea Doble.jpg" alt="Asalea Doble" id="img_plantas">
-                  <h3>Asalea Doble</h3>
-               </div>
-
-               <div id="Asalea Doble"></div>
+              <div id="Plantines con Flores"></div>
 
             </div>
+         </div>
 
-            <div id="Macetas_Plasticass"></div>
 
-            <br><br><br><br>
 
-         </article>
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Cangrejo Chico.jpg" alt="Cangrejo Chico" id="img_plantas">
+                     <h3>Cangrejo Chico</h3>
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Cangrejo Chico</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Cangrejo Chico"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Lazo de Amor.jpg" alt="Lazo de Amor" id="img_plantas">
+                     <h3>Lazo de Amor</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Lazo de Amor</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Lazo de Amor"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Cangrejo Blanco Grande.jpg" alt="Cangrejo Blanco Grande" id="img_plantas">
+                     <h3>Cangrejo Blanco Grande</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Cangrejo Blanco Grande</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Cangrejo Blanco Grande"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Mala Madre.jpg" alt="Mala Madre" id="img_plantas">
+                     <h3>Mala Madre</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Mala Madre</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Mala Madre"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Crisantemo.jpg" alt="Crisantemo" id="img_plantas">
+                     <h3>Crisantemo</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Crisantemo</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Crisantemo"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Malvon.jpg" alt="Malvon" id="img_plantas">
+                     <h3>Malvon</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Malvon</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Malvon"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Cigarro.jpg" alt="Cigarro" id="img_plantas">
+                     <h3>Cigarro</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Cigarro</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Cigarro"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Erica.jpg" alt="Erica" id="img_plantas">
+                     <h3>Erica</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Erica</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Erica"></div>
+
+            </div>
+         </div>
+
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Alegria del Hogar.jpg" alt="Alegria del Hogar Doble" id="img_plantas">
+                     <h3>Alegria del Hogar Doble</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Alegria del Hogar Doble</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Alegria del Hogar Doble"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Taco de Reina.jpg" alt="Taco de Reina" id="img_plantas">
+                     <h3>Taco de Reina</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Taco de Reina</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Taco de Reina"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Cala.jpg" alt="Cala" id="img_plantas">
+                     <h3>Cala</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Cala</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Cala"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Mariposa.jpg" alt="Mariposa" id="img_plantas">
+                     <h3>Mariposa</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Mariposa</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Mariposa"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Duranta.jpg" alt="Duranta" id="img_plantas">
+                     <h3>Duranta</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Duranta</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Duranta"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Asalea Simple.jpg" alt="Asalea Simple" id="img_plantas">
+                     <h3>Asalea Simple</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Asalea Simple</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Asalea Simple"></div>
+
+            </div>
+         </div>
+
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Asalea Doble.jpg" alt="Asalea Doble" id="img_plantas">
+                     <h3>Asalea Doble</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Asalea Doble</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Asalea Doble"></div>
+
+            </div>
+         </div>
+
+
+
+         <div class="card__father">
+
+            <div class="card">
+
+               <div class="card__front">
+
+                  <div class="body__card_front">              
+              
+                     <img loading="lazy" src="imagenes/PLANTINES/Con Flores/Camelia.jpg" alt="Camelia" id="img_plantas">
+                     <h3>Camelia</h3>
+
+                  </div>
+
+              </div>
+
+              <div class="card__back">
+
+                  <div class="body__card_back">
+
+                     <h3>Camelia</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                  </div>
+
+              </div>
+
+              <div id="Camelia"></div>
+
+            </div>
+         </div>
+
+      </div>
+
+      <div id="Macetas_Plasticas"></div>
+
+      <br><br><br><br>
+
+      </article>
   
-       </section>     
+      </section>     
          
     </section>
 
@@ -1058,131 +3079,557 @@
          <article class="otros">
    
           <h2>Macetas Plasticas</h2>
-   
-          <div class = "contenedor_plantas">
 
-                 <div id="planta">
-                    <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N21.jpg" alt="Macetas Plasticas N21" id="img_plantas">
-                    <h3>Macetas Plasticas N21</h3>
+          <div class ="container__card">
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N21.jpg" alt="Macetas Plasticas N21" id="img_plantas">
+                        <h3>Macetas Plasticas N21</h3>
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Plasticas N21</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
                  </div>
 
                  <div id="Macetas Plasticas N21"></div>
-              
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N17.jpg" alt="Macetas Plasticas N17" id="img_plantas">
-                     <h3>Macetas Plasticas N17</h3>
-                  </div>
-
-                  <div id="Macetas Plasticas N17"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N14.jpg" alt="Macetas Plasticas N14" id="img_plantas">
-                     <h3>Macetas Plasticas N14</h3>
-                  </div>
-
-                  <div id="Macetas Plasticas N14"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N10.jpg" alt="Macetas Plasticas N10" id="img_plantas">
-                     <h3>Macetas Plasticas N10</h3>
-                  </div>
-
-                  <div id="Macetas Plasticas N10"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N6.jpg" alt="Macetas Plasticas N6" id="img_plantas">
-                     <h3>Macetas Plasticas N6</h3>
-                  </div>
-
-                  <div id="Macetas Plasticas N6"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Bol con Ganchos.jpg" alt="Bol con Ganchos" id="img_plantas">
-                     <h3>Bol con Ganchos</h3>
-                  </div>
-
-                  <div id="Bol con Ganchos"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas Cuadradas.jpg" alt="Macetas Plasticas Cuadradas" id="">
-                     <h3>Macetas Plasticas Cuadradas</h3>
-                  </div>
-
-                  <div id="Macetas Plasticas Cuadradas"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Termo Formadas N10.jpg" alt="Macetas Termo Formadas N10" id="">
-                     <h3>Macetas Termo Formadas N10</h3>
-                  </div>
-
-                  <div id="Macetas Termo Formadas N10"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Estampadas N14.jpg" alt="Macetas Estampadas N14" id="img_plantas">
-                     <h3>Macetas Estampadas N14</h3>
-                  </div>
-
-                  <div id="Macetas Estampadas N14"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Estampadas N10.jpg" alt="Macetas Estampadas N10" id="img_plantas">
-                     <h3>Macetas Estampadas N10</h3>
-                  </div>
-
-                  <div id="Macetas Estampadas N10"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Estampadas N8.jpg" alt="Macetas Estampadas N8" id="img_plantas">
-                     <h3>Macetas Estampadas N8</h3>
-                  </div>
-
-                  <div id="Macetas Estampadas N8"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Sopladas N12.jpg" alt="Macetas Sopladas N12" id="img_plantas">
-                     <h3>Macetas Sopladas N12</h3>
-                  </div>
-
-                  <div id="Macetas Sopladas N12"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Vasitos de Telgopor.jpg" alt="Vasitos de Telgopor" id="img_plantas">
-                     <h3>Vasitos de Telgopor</h3>
-                  </div>
-
-                  <div id="Vasitos de Telgopor"></div>
 
                </div>
+            </div>
 
-               <div id="Macetas_Cemento"></div>
 
-               <br><br><br><br>
 
-           </article>
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N17.jpg" alt="Macetas Plasticas N17" id="img_plantas">
+                        <h3>Macetas Plasticas N17</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Plasticas N17</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Plasticas N17"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N14.jpg" alt="Macetas Plasticas N14" id="img_plantas">
+                        <h3>Macetas Plasticas N14</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Plasticas N14</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Plasticas N14"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N10.jpg" alt="Macetas Plasticas N10" id="img_plantas">
+                        <h3>Macetas Plasticas N10</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Plasticas N10</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Plasticas N10"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas N6.jpg" alt="Macetas Plasticas N6" id="img_plantas">
+                        <h3>Macetas Plasticas N6</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Plasticas N6</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Plasticas N6"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Bol con Ganchos.jpg" alt="Bol con Ganchos" id="img_plantas">
+                        <h3>Bol con Ganchos</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Bol con Ganchos</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Bol con Ganchos"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Plasticas Cuadradas.jpg" alt="Macetas Plasticas Cuadradas" id="img_plantas">
+                        <h3>Macetas Plasticas Cuadradas</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Plasticas Cuadradas</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Plasticas Cuadradas"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Termo Formadas N10.jpg" alt="Macetas Termo Formadas N10" id="img_plantas">
+                        <h3>Macetas Termo Formadas N10</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Termo Formadas N10</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Termo Formadas N10"></div>
+
+               </div>
+            </div>
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Estampadas N14.jpg" alt="Macetas Estampadas N14" id="img_plantas">
+                        <h3>Macetas Estampadas N14</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Estampadas N14</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Estampadas N14"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Estampadas N10.jpg" alt="Macetas Estampadas N10" id="img_plantas">
+                        <h3>Macetas Estampadas N10</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Estampadas N10</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Estampadas N10"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Estampadas N8.jpg" alt="Macetas Estampadas N8" id="img_plantas">
+                        <h3>Macetas Estampadas N8</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Estampadas N8</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Estampadas N8"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Macetas Sopladas N12.jpg" alt="Macetas Sopladas N12" id="img_plantas">
+                        <h3>Macetas Sopladas N12</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Sopladas N12</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Sopladas N12"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Plastico/Vasitos de Telgopor.jpg" alt="Vasitos de Telgopor" id="img_plantas">
+                        <h3>Vasitos de Telgopor</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Vasitos de Telgopor</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Vasitos de Telgopor"></div>
+
+               </div>
+            </div>
+
+         </div>
+
+         <div id="Plantas_Macetas_Colgantes"></div>
+
+         <br><br><br><br>
+
+         </article>
+
+        </section>
+
+    </section>
+
+    <section class="main"> 
+
+      <section class="articles"> 
+   
+         <article class="otros">
+   
+          <h2>Plantas con Macetas Colgantes</h2>
+
+          <div class ="container__card">
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas Colgantes con plantas//Helecho con Maceta Colgante.jpg" alt="Helecho con Maceta Colgante" id="img_plantas">
+                        <h3>Helecho con Maceta <br> Colgante</h3>
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Helecho con Maceta <br> Colgante</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Helecho con Maceta Colgante"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas Colgantes con plantas/Lazo de Amor con Maceta Colgante.jpg" alt="Lazo de Amor con Maceta Colgante" id="img_plantas">
+                        <h3>Lazo de Amor con Maceta Colgante</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Lazo de Amor con Maceta Colgante</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Lazo de Amor con Maceta Colgante"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas Colgantes con plantas/Barquito con Flores Purpuras.jpg" alt="Barquito con Flores Purpuras" id="img_plantas">
+                        <h3>Barquito con Flores <br> Purpuras</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Barquito con Flores <br> Purpuras</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Barquito con Flores Purpuras"></div>
+
+               </div>
+            </div>
+
+         </div>
+
+         <div id="Macetas_Cemento"></div>
+
+         <br><br><br><br>
+
+         </article>
 
         </section>
 
@@ -1195,130 +3642,443 @@
          <article class="otros">
    
           <h2>Macetas de Cemento</h2>
-   
-          <div class = "contenedor_plantas">
 
-                 <div id="planta">
-                   <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas de Cemento.jpg" alt="Macetas de Cemento" id="img_plantas">
-                   <h3>Macetas de Cemento</h3>
+          <div class ="container__card">
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas de Cemento.jpg" alt="Macetas de Cemento" id="img_plantas">
+                        <h3>Macetas de Cemento</h3>
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas de Cemento</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
                  </div>
 
                  <div id="Macetas de Cemento"></div>
-              
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Cuencos 3D.jpg" alt="Cuencos 3D" id="img_plantas">
-                     <h3>Cuencos 3D</h3>
-                  </div>
-
-                  <div id="Cuencos 3D"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Cuencos Chicos.jpg" alt="Cuencos Chicos" id="img_plantas">
-                     <h3>Cuencos Chicos</h3>
-                  </div>
-
-                  <div id="Cuencos Chicos"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Cuencos Dobles.jpg" alt="Cuencos Dobles" id="img_plantas">
-                     <h3>Cuencos Dobles</h3>
-                  </div>
-
-                  <div id="Cuencos Dobles"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Bols de Cemento.jpg" alt="Bols de Cemento" id="img_plantas">
-                     <h3>Bols de Cemento</h3>
-                  </div>
-
-                  <div id="Bols de Cemento"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Bols grandes de Cemento.jpg" alt="Bols grandes de Cemento" id="img_plantas">
-                     <h3>Bols grandes de Cemento</h3>
-                  </div>
-
-                  <div id="Bols grandes de Cemento"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas de Cemento N15.jpg" alt="Macetas de Cemento N15" id="img_plantas">
-                     <h3>Macetas de Cemento N15</h3>
-                  </div>
-
-                  <div id="Macetas de Cemento N15"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas Conicas.jpg" alt="Macetas Conicas" id="img_plantas">
-                     <h3>Macetas Conicas</h3>
-                  </div>
-
-                  <div id="Macetas Conicas"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas Petisas.jpg" alt="Macetas Petisas" id="img_plantas">
-                     <h3>Macetas Petisas</h3>
-                  </div>
-
-                  <div id="Macetas Petisas"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas grandes.jpg" alt="Macetas grandes" id="img_plantas">
-                     <h3>Macetas grandes</h3>
-                  </div>
-
-                  <div id="Macetas grandes"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Maceta Terrario.jpg" alt="Maceta Terrario" id="img_plantas">
-                     <h3>Maceta Terrario</h3>
-                  </div>
-
-                  <div id="Maceta Terrario"></div>
-
-
-                  
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas Bimbas N15.jpg" alt="Macetas Bimbas N15" id="img_plantas">
-                     <h3>Macetas Bimbas N15</h3>
-                  </div>
-
-                  <div id="Macetas Bimbas N15"></div>
-
-
-
-                  <div id="planta">
-                     <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Dijes de Cemento.jpg" alt="Dijes de Cemento" id="img_plantas">
-                     <h3>Dijes de Cemento</h3>
-                  </div>
-
-                  <div id="Dijes de Cemento"></div>
-                  
 
                </div>
+            </div>
 
-               <div id="Macetas_Madera"></div>
 
-               <br><br><br><br>
 
-           </article>
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Cuencos 3D.jpg" alt="Cuencos 3D" id="img_plantas">
+                        <h3>Cuencos 3D</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Cuencos 3D</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Cuencos 3D"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Cuencos Chicos.jpg" alt="Cuencos Chicos" id="img_plantas">
+                        <h3>Cuencos Chicos</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Cuencos Chicos</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Cuencos Chicos"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Cuencos Dobles.jpg" alt="Cuencos Dobles" id="img_plantas">
+                        <h3>Cuencos Dobles</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Cuencos Dobles</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Cuencos Dobles"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Bols de Cemento.jpg" alt="Bols de Cemento" id="img_plantas">
+                        <h3>Bols de Cemento</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Bols de Cemento</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Bols de Cemento"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Bols grandes de Cemento.jpg" alt="Bols grandes de Cemento" id="img_plantas">
+                        <h3>Bols grandes de Cemento</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Bols grandes de Cemento</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Bols grandes de Cemento"></div>
+
+               </div>
+            </div>
+
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas de Cemento N15.jpg" alt="Macetas de Cemento N15" id="img_plantas">
+                        <h3>Macetas de Cemento N15</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas de Cemento N15</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas de Cemento N15"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas Conicas.jpg" alt="Macetas Conicas" id="img_plantas">
+                        <h3>Macetas Conicas</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Conicas</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Conicas"></div>
+
+               </div>
+            </div>
+
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas Petisas.jpg" alt="Macetas Petisas" id="img_plantas">
+                        <h3>Macetas Petisas</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Petisas</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Petisas"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas grandes.jpg" alt="Macetas grandes" id="img_plantas">
+                        <h3>Macetas grandes</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas grandes</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas grandes"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Maceta Terrario.jpg" alt="Maceta Terrario" id="img_plantas">
+                        <h3>Maceta Terrario</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Maceta Terrario</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Maceta Terrario"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Macetas Bimbas N15.jpg" alt="Macetas Bimbas N15" id="img_plantas">
+                        <h3>>Macetas Bimbas N15</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>>Macetas Bimbas N15</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id=">Macetas Bimbas N15"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de Cemento/Dijes de Cemento.jpg" alt="Dijes de Cemento" id="img_plantas">
+                        <h3>Dijes de Cemento</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Dijes de Cemento</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Dijes de Cemento"></div>
+
+               </div>
+            </div>
+
+         </div>
+
+         <div id="Macetas_Madera"></div>
+
+         <br><br><br><br>
+
+         </article>
 
         </section>
 
@@ -1331,106 +4091,342 @@
          <article class="otros">
    
           <h2>Macetas de Madera</h2>
-   
-          <div class = "contenedor_plantas">
 
-                 <div id="planta">
-                   <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 1.jpg" alt="Macetas Colgantes Madera de Ceibo" id="">
-                   <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+          <div class ="container__card">
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 1.jpg" alt="Macetas Colgantes Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
                  </div>
 
                  <div id="Macetas Colgantes - Madera de Ceibo"></div>
 
-
-
-                 <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 2.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="">
-                  <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
-                </div>
-
-                <div id="Macetas Colgantes - Madera de Ceibo"></div>
+               </div>
+            </div>
 
 
 
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 3.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="">
-                  <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
-                </div>
+            <div class="card__father">
 
-                <div id="Macetas Colgantes - Madera de Ceibo"></div>
+               <div class="card">
 
+                  <div class="card__front">
 
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 2.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
 
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 4.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="img_plantas">
-                  <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
-                </div>
+                     </div>
 
-                <div id="Macetas Colgantes - Madera de Ceibo"></div>
+                 </div>
 
+                 <div class="card__back">
 
+                     <div class="body__card_back">
 
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 5.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="img_plantas">
-                  <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
-                </div>
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
 
-                <div id="Macetas Colgantes - Madera de Ceibo"></div>
+                     </div>
 
+                 </div>
 
-
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 6.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="img_plantas">
-                  <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
-                </div>
-
-                <div id="Macetas Colgantes - Madera de Ceibo"></div>
-
-
-
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas de Madera de Ceibo 1.jpg" alt="Macetas de Madera de Ceibo" id="img_plantas">
-                  <h3>Macetas de Madera de Ceibo</h3>
-                </div>
-
-                <div id="Macetas de Madera de Ceibo"></div>
-
-
-
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas de Madera de Ceibo 2.jpg" alt="Macetas de Madera de Ceibo" id="img_plantas">
-                  <h3>Macetas de Madera de Ceibo</h3>
-                </div>
-
-                <div id="Macetas de Madera de Ceibo"></div>
-
-
-
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas de Madera de Ceibo 3.jpg" alt="Macetas de Madera de Ceibo" id="img_plantas">
-                  <h3>Macetas de Madera de Ceibo</h3>
-                </div>
-
-                <div id="Macetas de Madera de Ceibo"></div>
-
-
-
-                
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Nordico - Madera de Eucalipto.jpg" alt="Nordico - Madera de Eucalipto" id="img_plantas">
-                  <h3>Nordico <br> Madera de Eucalipto</h3>
-                </div>
-
-                <div id="Nordico - Madera de Eucalipto"></div>
-
+                 <div id="Macetas Colgantes - Madera de Ceibo"></div>
 
                </div>
+            </div>
 
-               <div id="De_Jardín"></div>
 
-               <br><br><br><br>
 
-           </article>
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 3.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Colgantes - Madera de Ceibo"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 4.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Colgantes - Madera de Ceibo"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 5.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Colgantes - Madera de Ceibo"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas Colgantes Madera de Ceibo 6.jpg" alt="Macetas Colgantes - Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas Colgantes <br> Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas Colgantes - Madera de Ceibo"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas de Madera de Ceibo 1.jpg" alt="Macetas de Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas de Madera de Ceibo</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas de Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas de Madera de Ceibo"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas de Madera de Ceibo 2.jpg" alt="Macetas de Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas de Madera de Ceibo</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas de Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas de Madera de Ceibo"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Macetas de Madera de Ceibo 3.jpg" alt="Macetas de Madera de Ceibo" id="img_plantas">
+                        <h3>Macetas de Madera de Ceibo</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Macetas de Madera de Ceibo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Macetas de Madera de Ceibo"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Macetas de madera/Nordico - Madera de Eucalipto.jpg" alt="Nordico - Madera de Eucalipto" id="img_plantas">
+                        <h3>Nordico <br> Madera de Eucalipto</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Nordico <br> Madera de Eucalipto</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Nordico - Madera de Eucalipto"></div>
+
+               </div>
+            </div>
+
+         </div>
+
+         <div id="Portamacetas"></div>
+
+         <br><br><br><br>
+
+         </article>
 
         </section>
 
@@ -1443,77 +4439,329 @@
          <article class="otros">
    
           <h2>Portamacetas</h2>
-   
-          <div class = "contenedor_plantas">
 
-                 <div id="planta">
-                   <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas para 2 - N14 de Pared - Hierro.jpg" alt="Portamacetas para 2 - N14 de Pared - Hierro" id="img_plantas">
-                   <h3>Portamacetas para 2 <br> N14 de Pared - Hierro</h3>
+          <div class ="container__card">
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas para 2 - N14 de Pared - Hierro.jpg" alt="Portamacetas para 2 - N14 de Pared - Hierro" id="img_plantas">
+                        <h3>Portamacetas para 2 <br> N14 de Pared - Hierro</h3>
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Portamacetas para 2 <br> N14 de Pared - Hierro</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
                  </div>
 
                  <div id="Portamacetas para 2 - N14 de Pared - Hierro"></div>
 
-
-
-                 <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas N14 de Pared - Hierro 1.jpg" alt="Portamacetas N14 de Pared - Hierro" id="img_plantas">
-                  <h3>Portamacetas N14 de Pared Hierro</h3>
-                </div>
-
-                <div id="Portamacetas N14 de Pared - Hierro"></div>
+               </div>
+            </div>
 
 
 
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas N14 de Pared - Hierro 2.jpg" alt="Portamacetas N14 de Pared - Hierro" id="img_plantas">
-                  <h3>Portamacetas N14 de Pared Hierro</h3>
-                </div>
+            <div class="card__father">
 
-                <div id="Portamacetas N14 de Pared - Hierro"></div>
+               <div class="card">
 
+                  <div class="card__front">
 
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas N14 de Pared - Hierro 1.jpg" alt="Portamacetas N14 de Pared - Hierro" id="img_plantas">
+                        <h3>Portamacetas N14 de Pared Hierro</h3>
 
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas de Pared - Hierro 1.jpg" alt="Portamacetas de Pared - Hierro" id="img_plantas">
-                  <h3>Portamacetas de Pared Hierro</h3>
-                </div>
+                     </div>
 
-                <div id="Portamacetas de Pared - Hierro"></div>
+                 </div>
 
+                 <div class="card__back">
 
+                     <div class="body__card_back">
 
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas de Pared - Hierro 2.jpg" alt="Portamacetas de Pared - Hierro" id="img_plantas">
-                  <h3>Portamacetas de Pared Hierro</h3>
-                </div>
+                        <h3>Portamacetas N14 de Pared Hierro</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
 
-                <div id="Portamacetas de Pared - Hierro"></div>
+                     </div>
 
+                 </div>
 
-
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas de Pared Doble - Hierro.jpg" alt="Portamacetas de Pared Doble - Hierro" id="img_plantas">
-                  <h3>Portamacetas de Pared Doble - Hierro</h3>
-                </div>
-
-                <div id="Portamacetas de Pared Doble - Hierro"></div>
-
-
-
-                <div id="planta">
-                  <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas de Pared estilo Saxofón.jpg" alt="Portamacetas de Pared estilo Saxofón" id="img_plantas">
-                  <h3>Portamacetas de Pared estilo Saxofón</h3>
-                </div>
-
-                <div id="Portamacetas de Pared estilo Saxofón"></div>
+                 <div id="Portamacetas N14 de Pared Hierro"></div>
 
                </div>
+            </div>
 
-               <div id="De_Jardín"></div>
 
-               <br><br><br><br>
 
-           </article>
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas N14 de Pared - Hierro 2.jpg" alt="Portamacetas N14 de Pared - Hierro" id="img_plantas">
+                        <h3>Portamacetas N14 de Pared Hierro</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Portamacetas N14 de Pared Hierro</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Portamacetas N14 de Pared Hierro"></div>
+
+               </div>
+            </div>
+
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas de Pared - Hierro 1.jpg" alt="Portamacetas de Pared - Hierro" id="img_plantas">
+                        <h3>Portamacetas de Pared Hierro</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Portamacetas de Pared Hierro</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Portamacetas de Pared Hierro"></div>
+
+               </div>
+            </div>
+
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas de Pared - Hierro 2.jpg" alt="Portamacetas de Pared - Hierro" id="img_plantas">
+                        <h3>Portamacetas de Pared Hierro</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Portamacetas de Pared Hierro</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Portamacetas de Pared Hierro"></div>
+
+               </div>
+            </div>
+
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas de Pared Doble - Hierro.jpg" alt="Portamacetas de Pared Doble - Hierro" id="img_plantas">
+                        <h3>Portamacetas de Pared Doble - Hierro</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Portamacetas de Pared Doble - Hierro</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Portamacetas de Pared Doble - Hierro"></div>
+
+               </div>
+            </div>
+
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Macetas/Portamacetas/Portamacetas de Pared estilo Saxofón.jpg" alt="Portamacetas de Pared estilo Saxofón" id="img_plantas">
+                        <h3>Portamacetas de Pared estilo Saxofón</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Portamacetas de Pared estilo Saxofón</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Portamacetas de Pared estilo Saxofón"></div>
+
+               </div>
+            </div>
+
+         </div>
+
+         <div id="Yuyitos"></div>
+
+         <br><br><br><br>
+
+         </article>
+
+        </section>
+
+    </section>
+
+    <section class="main"> 
+
+      <section class="articles"> 
+   
+         <article class="otros">
+   
+          <h2>Yuyitos para el Mate, Té</h2>
+
+          <div class ="container__card">
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                        <img loading="lazy" src="imagenes/PLANTINES/Yuyitos/Yuyitos para el Mate, Té 1.jpg" alt="Yuyitos para el Mate, Té" id="img_plantas">
+                        <h3>Yuyitos para el Mate, Té</h3>
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Yuyitos para el Mate, Té</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Yuyitos para el Mate, Té"></div>
+
+               </div>
+            </div>
+
+
+
+            <div class="card__father">
+
+               <div class="card">
+
+                  <div class="card__front">
+
+                     <div class="body__card_front">              
+                 
+                        <img loading="lazy" src="imagenes/PLANTINES/Yuyitos/Yuyitos para el Mate, Té 2.jpg" alt="Yuyitos para el Mate, Té" id="img_plantas">
+                        <h3>Yuyitos para el Mate, Té</h3>
+
+                     </div>
+
+                 </div>
+
+                 <div class="card__back">
+
+                     <div class="body__card_back">
+
+                        <h3>Yuyitos para el Mate, Té</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ut?</p>
+
+                     </div>
+
+                 </div>
+
+                 <div id="Yuyitos para el Mate, Té"></div>
+
+               </div>
+            </div>
+
+         </div>
+
+         <br><br><br><br><br><br><br>
+
+         </article>
 
         </section>
 
@@ -1525,23 +4773,50 @@
   </div>  
 
   <!--Pie de página-->
+   
+   <footer>
 
-  <div class="container_footer">
+         <div class="container__footer">
 
-        <footer>
+            <div class="box__footer">
 
-            <div class="logo_footer">
-                <img src="imagenes/logoLeo.png" alt="">
-           </div>
+               <div class="logo">
+                  <img src="imagenes/Vivero Leo1.png" alt="logo">
+               </div>
 
-           <h4>© 2021 Vivero Leo - Todos los Derechos Reservados</h4>
- 
-        </footer>
+            </div>
 
-   </div>
+            <div class="box__footer">
+               <h2>Ubicación</h2>
+               <a href="https://www.google.com/maps/place/Concordia,+Entre+R%C3%ADos/@-31.3785691,-58.1116616,12z/data=!3m1!4b1!4m5!3m4!1s0x95ade8093e560701:0x5d1d34b223a6f091!8m2!3d-31.3913921!4d-58.017434" target="_blank"><i class="fas fa-map-marker-alt"></i>Concordia - Entre Rios - Argentina</a>
+            </div>
+
+            <div class="box__footer">
+               <h2>Trabajamos</h2>
+               <a href="#"><i class="fas fa-car-side"></i>Con envio sin cargo!</a>
+               <a href="#"><i class="fas fa-clock"></i>Horario de corrido</a>
+            </div>
+
+            <div class="box__footer">
+               <h2>Redes Sociales</h2>
+               <a href="https://www.facebook.com/leo.moreno.3705157" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a>
+               <a href="https://www.instagram.com/viveroleo10/?hl=es-la" target="_blank"><i class="fab fa-instagram-square"></i>Instagram</a>
+            </div>
+
+         </div>
+
+         <div class="box__copyright">
+            <hr>
+            <p>Todos los Derechos Reservados © 2021
+            <b>Vivero Leo</b></p>
+         </div>
+
+   </footer>
+
 
    <!--Enlace js-->
-
+  <script src="https://kit.fontawesome.com/9db0557e4b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <script src="js/menu.js"></script>
   
