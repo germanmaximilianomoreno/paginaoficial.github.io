@@ -16,10 +16,6 @@
    --sombra: 0.62rem 0.62rem 0rem 0rem #369e61, 1.25rem 1.25rem #6fc290, 1.87rem 1.87rem 0.87rem #8cebb3;
  }
 
- /*[data-theme="dark"] {
-   --primary-color: #000000;
-   --bg-color: #ffffff;
- }*/
 
  body {
      font-size: 16px;
@@ -71,9 +67,10 @@
  }
 
  .logo {
-     width: 5.31rem;
+     width: 4.31rem;
      float: left; 
      position: absolute;
+     margin: 8px 0 0 5px;
  }
 
  header nav {
@@ -109,92 +106,142 @@
     margin: 0 5px 0 0;
 
  }
-
- #inicio a:hover{
-    color: var(--principal);
- }
  
  #inicio a {
     font-size: 1rem;
  }
 
+ .Aromáticas_Verduras:hover {
+    color: rgb(23, 173, 35);
+ }
 
- /*botón modo oscuro
+ .De_Jardín:hover {
+   color: rgb(28, 97, 19);
+ }
 
- .theme-switch-wrapper {
+ .Con_Flores:hover {
+    color: rgb(150, 60, 150);
+ }
+
+ .Arbolitos_Palmeras:hover {
+    color: rgb(84, 105, 25);
+ }
+
+ .Citrus:hover {
+    color: rgb(160, 151, 30);
+ }
+
+ .Yuyitos:hover {
+    color: rgb(97, 72, 34);
+ }
+
+ .ubi-home:hover {
+    color: var(--principal);
+ }
+
+ /* Barra lateral*/
+ 
+ 
+ .btn-menu {
+    border: none;
+    background: var(--principal);
+ }
+
+ .btn-menu i {
+    margin: 10px;
+ }
+
+ .pushbar {
+    background: rgb(53, 53, 53);
+    color: var(--primary-color);
+    padding: 20px;
+ }
+
+ .pushbar .btn-cerrar.izquierda {
+    text-align: left;
+ }
+
+ .pushbar .btn-cerrar button {
+    background: none;
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+ }
+
+ .pushbar .btn-cerrar button:hover {
+   color: var(--principal);
+}
+
+.btn-menu-pushbar {
     position: absolute;
-    top: 42px;
     left: 95%;
-    transform: translate(-50%, -50%);
+    top: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5px 15px 5px;
+}
+
+
+ /* Carrito de compras */
+
+ .table__productos {
+    display: flex;
  }
 
- .theme-switch {
-    display: block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+ .table__productos > img {
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
  }
 
- .theme-switch input {
+ .table__cantidad > input {
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+ }
+
+ .alert {
+    z-index: 40000;
+    margin-top: 1.2rem;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    border: none;
+    color: var(--bg-color);
+    font-weight: 600;
+ }
+
+ .hide, .remove {
     display: none;
  }
 
- .slider {
-    background-color: var(--principal);
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    right: 0;
-    top: 0;
-    position: absolute;
-    transition: .0s all;
+ .menu h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--principal);
  }
 
- .slider::before {
-    background-color: #ffffff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s all;
-    width: 26px;
+ .title {
+    font-size: 1rem;
+    margin: 8px;
  }
 
- .inoco1 {
-    position: absolute;
-    top:10px;
-    left: 15%;
-    color: #ffffff;
-    display: flex;
+ .input__elemento {
+   margin: 0 0 0 70px;
  }
 
- .inoco2 {
-    position: absolute;
-    top:10px;
-    left: 35px;
-    color: #ffffff;
-    display: flex;
+ .table__precio p {
+    margin: 8px;
  }
 
- input:checked + .slider {
-    background-color: var(--principal);
- }
-
- input:checked + .slider::before {
-    transform: translateX(26px);
- }
-
- .slider.round {
-    border-radius: .25rem;
- }
-
- .slider.round::before {
-    border-radius: .25rem;
- }*/
-
+ 
   /* Portada*/
 
  .portada {
@@ -269,11 +316,10 @@
 
  #ctn-icon-search{
     position: absolute;
-    right: 20px;
+    left: 92%;
     top: 10px;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 0 5px 15px 5px;     
  }
@@ -286,7 +332,7 @@
  }
 
  #ctn-icon-search i:hover{
-    color: var(--primary-color);
+    color: var(--principal);
  }
 
  #ctn-bars-search{
@@ -358,7 +404,7 @@
   /*Carousel*/
 
   .carousel {
-     margin: 2rem 6rem 0 2rem;
+     margin: 2rem 2rem 0 2rem;
   }
 
   .carousel__contenedor {
@@ -391,7 +437,7 @@
   }
 
   .carousel__siguiente {
-   right: -30px;
+     right: -30px;
   }
 
   .carousel__elemento {
@@ -400,47 +446,49 @@
      transition: all 600ms;
      animation-name: autoplay;
      animation-duration: 23.5s;
-     animation-direction:normal;
+     animation-direction:alternate;
      animation-fill-mode: forwards;
      animation-iteration-count: infinite;
   }
 
   @keyframes autoplay{
-     10%{
+     9%{
         transform: translate3d(calc(-100% * 0), 0, 0);
      }
 
-     20%{
+     18%{
         transform: translate3d(calc(-100% * 1), 0, 0);
      }
 
-     30%{
+     27%{
         transform: translate3d(calc(-100% * 2), 0, 0);
      }
 
-     40%{
+     36%{
         transform: translate3d(calc(-100% * 3), 0, 0);
      }
 
-     50%{
+     45%{
         transform: translate3d(calc(-100% * 4), 0, 0);
      }
 
-     60%{
+     54%{
         transform: translate3d(calc(-100% * 5), 0, 0);
      }
 
-     70%{
+     63%{
         transform: translate3d(calc(-100% * 6), 0, 0);
      }
 
-     80%{
+     72%{
         transform: translate3d(calc(-100% * 7), 0, 0);
      }
 
-     90%{
+     100%{
         transform: translate3d(calc(-100% * 8), 0, 0);
      }
+
+  
   }
 
   .carousel__elemento {
@@ -641,13 +689,32 @@
    text-align: center;
  }
 
+ .body__card_back h5 {
+    color: var(--principal);
+ }
+
  #img_plantas {
    height: 21.7rem;
    width: 100%;
    border-radius: 0.3rem;
  }
 
+ .button {
+    background: var(--principal);
+    border: none;
+ }
 
+ .button:hover {
+    background: #41af6f;
+ }
+
+ .text-primary {
+    color: var(--principal);
+    font-size: 1.5rem;
+    text-align: center;
+ }
+
+ 
  
   /* Botón de subir */
 
@@ -709,7 +776,7 @@
      max-width: 1000px;
      margin: auto;
      margin-top: 20px;
-     
+     padding: 10px;
   }
 
   .box__footer {
@@ -719,7 +786,7 @@
   }
 
   .box__footer .logo img {
-     width: 150px;
+     width: 110px;
   }
 
   .box__footer h2 {
@@ -766,47 +833,6 @@
      background-color: var(--primary-color);
   }
 
- /* Pie de página */
-
- /*.container_footer {
-    width: 100%;
-    padding: 10px 0;
-    overflow:hidden;
-    margin-top: 40px;
-    position: relative;
- }
-
- .container_footer::before {
-    content: '';
-    width: 100%;
-    height: 0.3rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background:var(--principal); 
- }
-
- .container_footer footer {
-    max-width: 1200px;
-    margin: auto;
- }
-
- .container_footer footer .logo_footer {
-    text-align: center;
- }
-
- .container_footer footer .logo_footer img {
-    width: 50px;
- }
-
- .container_footer footer h4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    color: var(--principal);
-    text-align: center;
- }*/
 
  /* Adaptable */
 
@@ -815,9 +841,9 @@
             width: 93%;
         }
 
-     #ctn-bars-search, #ctn-bars-search input, #box-search {
-        width: 100%;
-     }
+         #ctn-bars-search, #ctn-bars-search input, #box-search {
+            width: 100%;
+       }
    }
 
  @media screen and (max-width:1000px) {
@@ -843,9 +869,6 @@
             margin: 0 0 50px 0;
         }
 
-        #ctn-icon-search {
-         right: -400%;
-      }
      }
 
  @media screen and (max-width:1130px) {
@@ -921,7 +944,12 @@
         }
 
         #ctn-icon-search {
-           right: -600%;
+         left: 48%;
+        }
+
+        .btn-menu-pushbar {
+         left: 52%;
+         margin: 0 0 0 10px;
         }
 
      }
@@ -930,36 +958,18 @@
         .articles {
             width: 82%;
         }
-
-        #ctn-icon-search {
-         right: -300%;
-      }
      }
 
  @media screen and (max-width:830px) {
         .titulo h1 b {
             display: block;
         }
-
-        #ctn-icon-search {
-         right: -200%;
-      }
      }
-
- @media screen and (max-width:600px) {
-      #ctn-icon-search {
-          right: -200%;
-   }
- }
 
  @media screen and (max-height:500px) {
         .social {
             top: 30%;
         }
-
-        #ctn-icon-search {
-         right: -100%;
-      }
      }
 
  @media screen and (max-width:450px) {
