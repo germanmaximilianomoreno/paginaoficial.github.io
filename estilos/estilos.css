@@ -142,7 +142,11 @@
     color: var(--principal);
  }
 
- /* Barra lateral
+ .Macetas:hover {
+    color: rgb(182, 130, 52);
+ }
+
+ /* Barra lateral*/
  
  
  .btn-menu {
@@ -184,7 +188,7 @@
     display: flex;
     align-items: center;
     padding: 0 5px 15px 5px;
-}*/
+}
 
 
  /* Carrito de compras */
@@ -562,7 +566,7 @@
 
  .social {
     position:fixed;
-    right: 0%;
+    right: 0;
     top: 50%;
     z-index: 7;
  }
