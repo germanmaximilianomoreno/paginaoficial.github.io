@@ -85,9 +85,11 @@
     float: left;
  }
 
+
  nav #alinear_menu {
    display: flex;
    justify-content: center;
+
  }
 
  header nav ul li a {
@@ -97,6 +99,7 @@
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
  }
+
 
  header nav ul li a span {
     margin-right: 0.5rem;
