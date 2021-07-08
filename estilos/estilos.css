@@ -623,9 +623,9 @@
     perspective: 1000px;
  }
 
- .card__father:hover .card {
+ /*.card__father:hover .card {
     transform: rotateY(180deg);
- }
+ }*/
 
  .card {
     width: 15.5rem;
