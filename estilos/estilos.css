@@ -114,6 +114,23 @@
     font-size: 1rem;
  }
 
+ .aviso_envio {
+    width: 150px;
+    height: 30px;
+    position: fixed;
+    top: 83px;
+    right:10px;
+    background: var(--principal);
+    color: var(--bg-color);
+    z-index: 999;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 5px 0 5px;
+ }
+
  .Aromáticas_Verduras:hover {
     color: rgb(23, 173, 35);
  }
@@ -542,7 +559,7 @@
 
  .articles {
     width: 93%;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 20px 0px 20px;
     padding: 1rem;
     position: relative;
     float: left;
@@ -594,15 +611,17 @@
     
  .social ul li a {
     display: inline-block;
-    padding: 0.62rem 0.94rem;
+    padding: 1rem 1.3rem;
     color:#fff;
     background: #000;
     text-decoration: none;
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+    font-size: 20px;
  }
 
+ .social ul li .icon-whatsapp {background:var(--principal) ;}
  .social ul li .icon-facebook {background:#3b5998;}
  .social ul li .icon-twitter {background:hsl(197, 100%, 47%);}
  .social ul li .icon-instagram {background-image: linear-gradient(to right top,
@@ -613,21 +632,11 @@
  .social ul li .icon-twitch {background:#A500FF;}
 
  .social ul li a:hover {
-    padding: 0.62rem 1.87rem;
+    padding: 1.3rem 2rem;
     background: black;
     margin-right: -30px;
  }
 
- .appwhatsapp {
-   position: fixed;
-   left: 10px;
-   bottom: 40px;
-   z-index: 1000;
-}
-
-.appwhatsapp i {
-   font-size: 80px;
-}
 
  /* Contenido */
 
@@ -764,7 +773,9 @@
     transition: all 300ms ease;
     transform: scale(0);
     z-index: 7;
+    padding: 10px 0 0 0;
  }
+
 
  #button-up:hover {
     transform: scale(1.1);
@@ -773,6 +784,9 @@
 
  #flecha_subir {
     font-size: 2rem;
+    font-weight: 700;
+    
+   
  }
 
 
@@ -865,20 +879,23 @@
  /* Adaptable */
 
  @media screen and (max-width:1300px) {
-         .articles {
-            width: 93%;
-        }
 
          #ctn-bars-search, #ctn-bars-search input, #box-search {
             width: 100%;
        }
    }
 
+ @media screen and (max-width:1210px) {
+    .Macetas {
+       display: none;
+    }
+ }
+
  @media screen and (max-width:1000px) {
         
         .articles {
             float:none;
-            width: 85%;
+          
         }
 
         .formulario {
@@ -986,11 +1003,7 @@
 
      }
 
- @media screen and (max-width:900px) {
-        .articles {
-            width: 82%;
-        }
-     }
+ 
 
  @media screen and (max-width:830px) {
         .titulo h1 b {
