@@ -997,6 +997,10 @@
         }
 
         .btn-menu-pushbar {
+         left: 50%;
+        }
+
+        .btn-menu-pushbar {
          display: none;
         }
 
