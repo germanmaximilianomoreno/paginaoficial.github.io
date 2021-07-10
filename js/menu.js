@@ -252,7 +252,7 @@ function renderCarrito(){
         
         <th scope="row"></th>
                          <td class="table__productos">
-                            <img src=${item.img} alt="" class"img_carrito">
+                            <img src=${item.img} alt="">
                             <h5 class="title">${item.title}</h5>
                          </td>
                          <td class="table__precio"><p>${item.precio}</p></td>
