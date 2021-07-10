@@ -163,6 +163,10 @@
     color: rgb(182, 130, 52);
  }
 
+ .Cactus_Suculentas:hover {
+   color: #51be7e;
+ }
+
  
 
  /* Barra lateral*/
@@ -998,6 +1002,10 @@
 
         .card__father:hover .card {
          transform:none;
+      }
+
+      .Macetas {
+         display: block;
       }
        
 
