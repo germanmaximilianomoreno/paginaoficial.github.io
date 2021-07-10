@@ -1033,7 +1033,7 @@
    }
 
    .table__productos > img {
-    width: 4rem;
+    display: none;
    }
 
      }
@@ -1114,8 +1114,4 @@
    left: 56%;
   }
 
-  .table__productos > img {
-   width: 3rem;
-
-  }
 }
