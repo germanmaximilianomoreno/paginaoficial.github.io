@@ -922,6 +922,10 @@
          display: none;
         }
 
+        .card__father:hover .card {
+         transform:none;
+      }
+
      }
 
  @media screen and (max-width:1130px) {
@@ -1004,9 +1008,6 @@
          left: 50%;
         }
 
-        .card__father:hover .card {
-         transform:none;
-      }
 
       .Macetas {
          display: block;
