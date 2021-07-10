@@ -216,10 +216,6 @@
 
  /* Carrito de compras */
 
- .table__productos {
-    display: flex;
- }
-
  .table__productos > img {
     width: 9rem;
     object-fit: contain;
