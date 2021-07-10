@@ -89,7 +89,6 @@
  nav #alinear_menu {
    display: flex;
    justify-content: center;
-
  }
 
  header nav ul li a {
@@ -920,17 +919,20 @@
  @media screen and (max-width:1130px) {
 
         header #nav {
-            width: 80%;
+            width: 40%;
             height: 100%;
             left: -100%;
             margin: 0rem;
             position: fixed;
             background: var(--bg-color);
+            overflow-y: scroll;
+     
         }
 
         nav {
             justify-content: left;
             align-items: flex-start;
+
         }
 
         .titulo_video {
@@ -941,15 +943,24 @@
             display: none;
         }
 
+        header nav ul {
+         width: 100%;
+        }
+
         header nav ul li {
             display: block;
             float:none;
             border-bottom: 0.1rem solid #369e61;
+            text-align: center;
+        }
+
+        nav #alinear_menu {
+           margin: 0 0 40px 0;
         }
 
         header nav ul li a {
-            padding: 1.31rem 80rem 1.31rem 1rem;
-            width: 100%;
+            padding: 1.31rem 1rem 1.31rem 1rem;
+            display: block;
             align-items: flex-start;
             color: var(--principal);
         }
@@ -984,10 +995,6 @@
         /*.theme-switch-wrapper {
             left: 50%;
         }*/
-
-        nav #alinear_menu {
-            justify-content: left;
-        }
 
         #ctn-icon-search {
          left: 47%;
