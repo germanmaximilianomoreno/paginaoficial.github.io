@@ -918,6 +918,10 @@
             margin: 0 0 50px 0;
         }
 
+        .btn-menu-pushbar {
+         display: none;
+        }
+
      }
 
  @media screen and (max-width:1130px) {
@@ -998,10 +1002,6 @@
 
         .btn-menu-pushbar {
          left: 50%;
-        }
-
-        .btn-menu-pushbar {
-         display: none;
         }
 
         .card__father:hover .card {
