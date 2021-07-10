@@ -1026,11 +1026,10 @@
         .social {
             top: 30%;
         }
+     
      }
 
-     header nav {
-      width: 50%;
-  }
+    
 
  @media screen and (max-width:450px) {
         .titulo h1 {
