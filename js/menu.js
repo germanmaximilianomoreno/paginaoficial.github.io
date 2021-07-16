@@ -333,8 +333,3 @@ window.onload = function(){
     }
 }
 
-
-
-/*Firebase*/
-
-
