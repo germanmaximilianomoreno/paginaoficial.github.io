@@ -332,3 +332,9 @@ window.onload = function(){
         renderCarrito()
     }
 }
+
+
+
+/*Firebase*/
+
+

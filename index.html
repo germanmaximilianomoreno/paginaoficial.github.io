@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="estilos/pushbar.css">
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="fonts.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
     <meta name="author" content="Maximiliano Moreno"> 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <a href="https://icons8.com/icon/11199/cactus">Cactus icon by Icons8</a>
@@ -6038,6 +6040,42 @@
         overlay: true
      });
   </script>
+
+
+   <!-- Firebase -->
+  
+ <script>
+   // Configuración de Firebase
+   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+   var firebaseConfig = {
+     apiKey: "AIzaSyDcB8dw5zlqXAI09z72bZn0Ow1X9x8mQks",
+     authDomain: "base-de-datos-carrito.firebaseapp.com",
+     projectId: "base-de-datos-carrito",
+     storageBucket: "base-de-datos-carrito.appspot.com",
+     messagingSenderId: "749847108096",
+     appId: "1:749847108096:web:b2f83022d8e154b3da56e5",
+     measurementId: "G-ZC6GEJYK6G"
+   };
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+   firebase.analytics();
+
+
+   var db = firebase.firestore();
+
+   db.collection("users").add({
+    first: "Ada",
+    last: "Lovelace",
+    born: 1815
+  })
+  .then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+  })
+  .catch((error) => {
+    console.error("Error adding document: ", error);
+  });
+  
+ </script>
   
 </body>
 </html>
